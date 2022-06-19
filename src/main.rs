@@ -31,17 +31,20 @@ async fn main() {
         Err(err_msg) => err_msg,
     };
     let mut myskin = root_ui().default_skin().clone();
-    myskin.label_style = root_ui().style_builder().font_size(30).build(); 
+    myskin.label_style = root_ui().style_builder().font_size(35).build(); 
+    myskin.button_style = root_ui().style_builder().text_color(Color::from_rgba(100, 100, 255, 255)).font_size(80).build(); 
     root_ui().push_skin(&myskin);
-    loop {
+    let mut running = true;
+    while running {
         clear_background(WHITE);
 
         root_ui().label(None, &to_work_message);
         root_ui().label(None, &home_message);
         if root_ui().button(None, "Exit") {
            println!("pushed");
-           return;
+           running = false;
         }
         next_frame().await
     }
+    root_ui().pop_skin();
 }
