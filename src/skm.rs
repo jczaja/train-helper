@@ -1,6 +1,8 @@
 pub mod skm {
     use chrono::prelude::*;
     use regex::Regex;
+    use std::fs::File;
+    use std::io::Write;
 
     pub struct SKM {
         skm_url: String,
@@ -46,20 +48,16 @@ pub mod skm {
             let start_offset = body
                 .find(&search_phrase)
                 .expect(&format!("Pattern: {}", search_phrase));
-            let pattern_slice = &body[start_offset..start_offset + 100]; // 100 characters should be enough
+            let pattern_slice = &body[start_offset..start_offset + 400]; // 400 characters should be enough
                                                                          // find first two "dd min"
-            let re = Regex::new(r"[0-9]+\s[m][i][n]").unwrap();
 
-            let next_train_minutes = match re.find(pattern_slice) {
-                Some(hit) => hit.as_str(),
-                None => panic!(),
-            };
-
+           let mut next_train_minutes : String = "".to_owned();
+           Regex::new(r"[0-9]+\s[m][i][n]").unwrap().find_iter(pattern_slice).for_each(|x| {next_train_minutes += x.as_str(); next_train_minutes += ", "});
+    
             " (".to_string()
                 + station
                 + " --> ) departs in "
-                + next_train_minutes
-                + "utes"
+                + &next_train_minutes
         }
 
         pub fn submit(&self) -> Result<String,String> {
@@ -119,6 +117,12 @@ pub mod skm {
     #[cfg(test)]
     mod tests {
         use super::*;
+        use std::fs::File;
+        use std::io::prelude::*;
+        use std::path::Path;
+
+        type GenericError = Box<dyn std::error::Error + Send + Sync + 'static>;
+        type GenericResult<T> = Result<T, GenericError>;
 
         #[test]
         fn test_skm() -> Result<(), String> {
@@ -131,6 +135,28 @@ pub mod skm {
                 ],
             )
             .submit();
+            Ok(())
+        }
+
+
+        #[test]
+        fn test_parsing_message() -> GenericResult<()> {
+            // Let's read data to parse from stored file
+            let mut file = std::fs::File::open("data/test_data.txt")?;
+
+            let mut s = String::new();
+            file.read_to_string(&mut s)?;
+
+            let response = SKM::new(
+                "https://skm.trojmiasto.pl/".to_string(),
+                None,
+                vec![
+                    "Gdansk Wrzeszcz".to_string(),
+                    "Gdansk Port Lotniczy".to_string(),
+                ],
+            ).get_message(&s,"Gdansk Wrzeszcz");
+            let expected_response = " (Gdansk Wrzeszcz --> ) departs in 16 min, 26 min, 80 min, ";
+            assert_eq!(response, expected_response);
             Ok(())
         }
     }
