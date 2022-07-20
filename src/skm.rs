@@ -1,8 +1,5 @@
 pub mod skm {
-    use chrono::prelude::*;
     use regex::Regex;
-    use std::fs::File;
-    use std::io::Write;
 
     pub struct SKM {
         skm_url: String,
@@ -33,9 +30,7 @@ pub mod skm {
                 + search_phrase.len()
                 + 1;
             let pattern_slice = &body[id_offset_start..];
-            let id_offset_end = pattern_slice
-                .find('"')
-                .expect("Id pattern not found");
+            let id_offset_end = pattern_slice.find('"').expect("Id pattern not found");
             // SO I need to extract: "<number>" and the parse <number> to get value
             &pattern_slice[0..id_offset_end]
         }
@@ -51,16 +46,19 @@ pub mod skm {
             let pattern_slice = &body[start_offset..start_offset + 400]; // 400 characters should be enough
                                                                          // find first two "dd min"
 
-           let mut next_train_minutes : String = "".to_owned();
-           Regex::new(r"[0-9]+\s[m][i][n]").unwrap().find_iter(pattern_slice).for_each(|x| {next_train_minutes += x.as_str(); next_train_minutes += ", "});
-    
-            " (".to_string()
-                + station
-                + " --> ) departs in "
-                + &next_train_minutes
+            let mut next_train_minutes: String = "".to_owned();
+            Regex::new(r"[0-9]+\s[m][i][n]")
+                .unwrap()
+                .find_iter(pattern_slice)
+                .for_each(|x| {
+                    next_train_minutes += x.as_str();
+                    next_train_minutes += ", "
+                });
+
+            " (".to_string() + station + " --> ) departs in " + &next_train_minutes
         }
 
-        pub fn submit(&self) -> Result<String,String> {
+        pub fn submit(&self) -> Result<String, String> {
             // If there is proxy then pick first URL
             let client = reqwest::blocking::Client::new();
 
@@ -70,8 +68,8 @@ pub mod skm {
             // HERE is fine to return
             // Returning here is fine
             let res = match res {
-                Ok(result) => result.text(),  
-                Err(i) => return Err(format!("Error sending SKM request: {}",i)),
+                Ok(result) => result.text(),
+                Err(i) => return Err(format!("Error sending SKM request: {}", i)),
             };
 
             let actual_response = res.expect("Error: unwrapping SKM response");
@@ -138,7 +136,6 @@ pub mod skm {
             Ok(())
         }
 
-
         #[test]
         fn test_parsing_message() -> GenericResult<()> {
             // Let's read data to parse from stored file
@@ -154,7 +151,8 @@ pub mod skm {
                     "Gdansk Wrzeszcz".to_string(),
                     "Gdansk Port Lotniczy".to_string(),
                 ],
-            ).get_message(&s,"Gdansk Wrzeszcz");
+            )
+            .get_message(&s, "Gdansk Wrzeszcz");
             let expected_response = " (Gdansk Wrzeszcz --> ) departs in 16 min, 26 min, 80 min, ";
             assert_eq!(response, expected_response);
             Ok(())
