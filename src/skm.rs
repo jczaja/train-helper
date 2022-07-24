@@ -39,23 +39,26 @@ pub mod skm {
             // We connstruct search pattern to get remaining time. for example:
             // Najbliższa kolejka za</p>
             //<h3 class="no-print">28 min</h3>
+
             let search_phrase = "Najbl".to_string();
-            let start_offset = body
-                .find(&search_phrase)
-                .expect(&format!("Pattern: {}", search_phrase));
-            let pattern_slice = &body[start_offset..start_offset + 400]; // 400 characters should be enough
-                                                                         // find first two "dd min"
+            let return_string: String = match body.find(&search_phrase) {
+                Some(start_offset) => {
+                    let pattern_slice = &body[start_offset..start_offset + 400]; // 400 characters should be enough
+                                                                                 // find first two "dd min"
+                    let mut next_train_minutes: String = "".to_owned();
+                    Regex::new(r"[0-9]+\s[m][i][n]")
+                        .unwrap()
+                        .find_iter(pattern_slice)
+                        .for_each(|x| {
+                            next_train_minutes += x.as_str();
+                            next_train_minutes += ", "
+                        });
 
-            let mut next_train_minutes: String = "".to_owned();
-            Regex::new(r"[0-9]+\s[m][i][n]")
-                .unwrap()
-                .find_iter(pattern_slice)
-                .for_each(|x| {
-                    next_train_minutes += x.as_str();
-                    next_train_minutes += ", "
-                });
-
-            " (".to_string() + station + " --> ) departs in " + &next_train_minutes
+                    " (".to_string() + station + " --> ) departs in " + &next_train_minutes
+                }
+                None => "No connections today".to_owned(),
+            };
+            return_string
         }
 
         pub fn submit(&self) -> Result<String, String> {
@@ -154,6 +157,28 @@ pub mod skm {
             )
             .get_message(&s, "Gdansk Wrzeszcz");
             let expected_response = " (Gdansk Wrzeszcz --> ) departs in 16 min, 26 min, 80 min, ";
+            assert_eq!(response, expected_response);
+            Ok(())
+        }
+
+        #[test]
+        fn test_parsing_message_missing() -> GenericResult<()> {
+            // Let's read data to parse from stored file
+            let mut file = std::fs::File::open("data/test2_data.txt")?;
+
+            let mut s = String::new();
+            file.read_to_string(&mut s)?;
+
+            let response = SKM::new(
+                "https://skm.trojmiasto.pl/".to_string(),
+                None,
+                vec![
+                    "Gdansk Wrzeszcz".to_string(),
+                    "Gdansk Port Lotniczy".to_string(),
+                ],
+            )
+            .get_message(&s, "Gdansk Wrzeszcz");
+            let expected_response = "No connections today";
             assert_eq!(response, expected_response);
             Ok(())
         }
