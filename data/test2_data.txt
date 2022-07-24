@@ -1,0 +1,2518 @@
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    
+            <title>Rozkład: GDAŃSK WRZESZCZ - Gdańsk Port Lotniczy - 24 lipca 2022 - Rozkład jazdy kolejki SKM, PKM w Trójmieście</title>
+<meta http-equiv="x-dns-prefetch-control" content="on"/>
+<link rel="dns-prefetch" href="//s-trojmiasto.pl"/>
+<link rel="preconnect" href="//s-trojmiasto.pl"/>
+<link rel="dns-prefetch" href="//x-trojmiasto.pl"/>
+<link rel="preconnect" href="//x-trojmiasto.pl"/>
+<link rel="dns-prefetch" href="//google-analytics.com"/>
+          <meta name="keywords" content="SKM, PKM, PKP, rozkład, rozklad, jazdy, kolejki, kolejka, kursy, stacje, pociag, pociąg, pociągi, pkp, komunikacja, gdańsk, gdansk, gdansku, trójmiasto, trojmiasto, trojmiasta, o,w, gdynia, gdyni, sopot, sopotu, sopocie, wejherowo, rumia, reda, Stocznia, politechnika, Wrzeszcze, przymorze, Zaspa, Oliwa, Żabianka, Wyścigi, Kamienny Potok, Orłowo, Redłowo, Wzgórze, Maksymiliana, Grabuwek, Leszczynki, Chylonia, Cisowa, Rumia Janowo, Reda Pleszewo, Wejherowo Śmiechowo, Wejherowo Nanice" />
+
+      <meta name="description" content="Rozkład: GDAŃSK WRZESZCZ - Gdańsk Port Lotniczy - 24 lipca 2022 - Rozkład jazdy kolejki SKM, PKM w Trójmieście" />
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="google-site-verification" content="whd_2eL6n23MhI__o_4vNSfwmAUyoflMMz41nqUQsBY" />
+
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+                          <meta property="fb:app_id" content="465304656855988" />
+                                <meta property="og:description" content="Rozkłady jazdy SKM, PKM, ceny biletów, mapa trasy, ogłoszenia dla podróżnych" />
+                                <meta property="og:image" content="https://www.trojmiasto.pl/_img/facebook/skm_index.jpg?r=2022072414" />
+                                <meta property="og:image:type" content="image/jpeg" />
+                                <meta property="og:locale" content="pl_PL" />
+                                <meta property="og:site_name" content="trojmiasto.pl" />
+                                <meta property="og:title" content="SKM, PKM w Trojmiasto.pl" />
+                                <meta property="og:type" content="website" />
+                                <meta property="twitter:card" content="summary_large_image" />
+                                <meta property="twitter:description" content="Rozkłady jazdy SKM, PKM, ceny biletów, mapa trasy, ogłoszenia dla podróżnych" />
+                                <meta property="twitter:image" content="https://www.trojmiasto.pl/_img/facebook/skm_index.jpg?r=2022072414" />
+                                <meta property="twitter:site" content="@Trojmiasto_pl" />
+                                <meta property="twitter:title" content="SKM, PKM w Trojmiasto.pl" />
+                  <meta name="robots" content="index, follow" />
+
+
+
+  
+    <meta name="language" content="pl" />
+
+  
+        <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.trojmiasto.pl/skm/rozklad/?from=7534&to=257530&date=2022-07-24&hour=23%3A03" >
+    
+  
+    <!--  IE -->
+<link rel="icon" href="https://s-trojmiasto.pl/_img/favicon/favicon.ico">
+
+<!--  Chrome na Androida -->
+<link rel="icon" sizes="192x192" href="https://s-trojmiasto.pl/_img/favicon/touch-icon-192x192.png" type="image/x-icon">
+
+<!-- Rozne iOS -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://s-trojmiasto.pl/_img/favicon/apple-touch-icon-180x180-precomposed.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://s-trojmiasto.pl/_img/favicon/apple-touch-icon-152x152-precomposed.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://s-trojmiasto.pl/_img/favicon/apple-touch-icon-120x120-precomposed.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://s-trojmiasto.pl/_img/favicon/apple-touch-icon-76x76-precomposed.png">
+<link rel="apple-touch-icon" sizes="57x57" href="https://s-trojmiasto.pl/_img/favicon/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon" href="https://s-trojmiasto.pl/_img/favicon/apple-touch-icon-precomposed.png"><!-- 57x57px - taki default dla najnizszych wersji -->
+  
+    <link rel="stylesheet" href="https://x-trojmiasto.pl/combo/f=/_style/reset.css,/_style/common.css,/_style/a_d_s/b.css,/_style/fonts/OpenSans/OpenSans.css,/_style/tabs.css,/_style/komunikacja/layout_komunikacja.css,/_style/_partials/print/print.css,/_style/_partials/box_tv_newest/box_tv_newest.css,/_style/chosen/chosen.css,/_style/komunikacja/layout_skm.css,/_style/datepicker/datepicker_skm.css?e7e77cc6f47bdb40.97" />
+
+  
+<script src="/_misc/url.js"></script>
+
+
+<script>var homeDir = "https://www.trojmiasto.pl";</script><script>var currentService = 'skm';</script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    
+    if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='/_js/vendor/jquery3/jquery.min.js' %3E%3C/script%3E"));
+    }
+    
+    </script>
+        <script src="https://s-trojmiasto.pl/_js/vendor/jquery3/jquery-migrate-3.0.0.min.js"></script>
+
+
+
+        
+                        <script src="https://x-trojmiasto.pl/combo/f=/_js/main.js,/_js/_partials/header.js,/_js/bs.js,/_js/_partials/navigation_events.js,/_js/tv/playOnHover.js,/_js/komunikacja/skm_timetable.js,/_js/kalendarz/js.js,/_js/chosen/chosen_with_keywords.js,/_js/time-picker/time-picker.js,/_js/quiz.js?e7e77cc6f47bdb40.97"></script>
+
+
+  
+  <script>
+    
+        function readCookie(name) {
+            var ca = document.cookie.split(";");
+            var rs = [];
+            ca.forEach(function (element) {
+                var el = element.split("=");
+                if (el[0].trim().indexOf(name) === 0) {
+                    rs.push(el[1].trim());
+                }
+            });
+            //cookie zwykle zwracamy tylko wartosc
+            if (rs.length === 1) {
+                return rs[0];
+            }
+            return rs;
+        }
+        function rodo_msg() {
+            if(isNaN(parseInt(readCookie("rodoAccept"))) && isNaN(parseInt(readCookie("rodoNotNow"))) && isNaN(parseInt(readCookie("rodoWaiting"))) && !$("div#rodo_info").is(':visible')) {
+                
+
+                var rodoType = 'desktop';
+                var rodoText = '<p>Drogi Użytkowniku,</p><p>Zapoznaj się z naszą <a href="https://www.trojmiasto.pl/portal/polityka_prywatnosci">Polityką prywatności</a>, gdzie wyjaśniamy, jakie informacje zbieramy i dlaczego to robimy.</p>';
+                
+
+                var html = '<div id="rodo_info" class="accept-box accept-box--rodo">';
+                html += '<div class="accept-box__container">';
+                html += '<div class="accept-box__heading__wrapper"><span class="trm trm-rodo"></span>';
+                html += '<h2 class="accept-box__heading">Polityka prywatności</h2></div>';
+                html += '<div class="accept-box__text">' + rodoText + '</div>';
+                html += '<div class="accept-box__buttons-container">';
+                html += '<a id="rodo_accept" href="javascript:void(0)" class="accept-box__button">Akceptuję</a>';
+                html += '<a id="rodo_not_now" href="https://www.trojmiasto.pl/portal/polityka_prywatnosci" class="accept-box__button accept-box__button--secondary">Zobacz szczegóły</a></div>';
+                html += '</div></div>';
+
+                $(html).appendTo('body');
+
+                if(rodoType == 'mobile') {
+                    $('#rodo_info').addClass('accept-box--mobile');
+                } else {
+                    $('#rodo_info').addClass('accept-box--desktop');
+                }
+
+                $('#rodo_show_more').on('click', function() {
+                    $(this).slideUp(200);
+                    $('#rodo_more').slideDown(200);
+                });
+
+                // zamykanie informacji i tworzenie cookies
+                $('#rodo_accept').on('click', function() {
+                    $('#rodo_info .accept-box__container').slideUp(200, function() {
+                        $('#rodo_info').hide();
+                    });
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/_ajax/Glowna__Accept_policy/",
+                        success: function(response) {
+                            if (response) {
+                                response.forEach((src) => {
+                                    let img = $('<img>')
+                                        .attr('src', src)
+                                        .appendTo('#rodo_info')
+                                        .hide();
+                                });
+                            }
+                        },
+                        error: function() {
+                            createCookie("rodoWaiting", "1", 7);
+                        }
+                    });
+                });
+            }
+        }
+
+
+    // kompatybilnosc ze stara logika sterujaca plansza RODO
+    
+                $(document).ready(function() {
+            rodo_msg();
+        });
+    
+</script>
+
+</head>
+<body >
+
+    
+    <!-- phpdeveloper? join us! mail('praca@trojmiasto.pl', 'phpdeveloper', $cv.$short_desc); -->
+
+    
+        <script>
+            $(function() {
+                $("a.l").each(function() {
+                    $(this).attr("href", $(this).attr("rel"));
+                })
+            });
+        </script>
+    
+
+    
+    
+    
+    
+    
+
+    
+            <div class="main-wrap-outer">
+    <div class="main-wrap" id="main-wrap">
+    
+<header class="header header--komunikacja header--custom" data-header="section">
+
+    <div class="header-inner headerInner">
+                                
+                
+<div id="masthead" class="header__top">
+    
+                            
+        <a href="https://www.trojmiasto.pl/" title="Trojmiasto.pl" id="header-logo" class="header__logo"><img src="https://s-trojmiasto.pl/_img/svg/logo.svg?14:37:00" alt="Trojmiasto.pl - powrót na stronę główną" title="" /></a>    
+
+    
+                    <div class="header__serviceName">
+                <a href="//komunikacja.trojmiasto.pl/">Komunikacja</a>            </div>
+            
+
+    
+        <div class="header__searchbox">
+                            
+                    <link rel="stylesheet" property="stylesheet"  href="https://s-trojmiasto.pl/_style/autocomplete/autocomplete_default.css" />
+                    <script src="/_js/vendor/jquery.autocomplete.min.js"></script>
+                    <script src="/_js/search.js?utf-8"></script>
+                
+                        <form id="main-search" class="header__searchbox__form" action="https://www.trojmiasto.pl/s/" method="get" onsubmit="if(this.search_redirect.value==''){search_csl(this.string.value); return false;}">
+                <input type="hidden" name="akcja" value="szukaj" />
+                <input id="search_input" type="text" class="headerSearchbox__input header__searchbox__hint" maxlength="60" name="string" value="" placeholder="Szukaj w Trójmieście" />
+                <script>var hint_main_width = 400;</script><input type="hidden" id="search_redirect" name="search_redirect" value="" />                <input id="search_submit_button" class="headerSearchbox__btn" type="submit" value="" />
+                <i class="trm trm-search"></i>
+            </form>
+        </div>
+    
+
+    
+        <ul class="header__icons">
+            
+                <li class="header__icons__item">
+                    <a class="headerIconsItem__ico headerIconsItem__ico--kino" title="Kino" href="https://kino.trojmiasto.pl/" ><span>Kino</span></a>
+                </li>
+                <li class="header__icons__item">
+                    <a class="headerIconsItem__ico headerIconsItem__ico--mapa" title="Mapa" href="https://mapa.trojmiasto.pl/"  target="_blank"><span>Mapa</span></a>
+                </li>
+                <li class="header__icons__item">
+                    <a class="headerIconsItem__ico headerIconsItem__ico--ogloszenia" title="Ogłoszenia" href="https://ogloszenia.trojmiasto.pl/"><span>Ogłoszenia</span></a>
+                </li>
+                <li class="header__icons__item">
+                    <a class="headerIconsItem__ico headerIconsItem__ico--forum" title="Forum" href="https://forum.trojmiasto.pl/"><span>Forum</span></a>
+                </li>
+                <li class="header__icons__item">
+                    <a class="headerIconsItem__ico headerIconsItem__ico--komunikacja" title="Komunikacja" href="//komunikacja.trojmiasto.pl/"><span>Komunikacja</span></a>
+                </li>
+                <li class="header__icons__item">
+                    <a class="headerIconsItem__ico headerIconsItem__ico--raport" href="https://www.trojmiasto.pl/raport/"><span>Raport</span></a>
+                        <div class="ImportantReportsCounter" data-last-report-counter="52862"></div>
+
+    <script>
+      $(document).ready(function() {
+        if (typeof readCookie == "undefined") {
+          return false;
+        }
+        const counterObject = $("div.ImportantReportsCounter");
+        const lastReportCounter = parseInt(counterObject.data("lastReportCounter"));
+        const lastUserReportCounter = parseInt(readCookie("last_report_counter")) || 0;
+        let counter;
+        if (lastReportCounter > 0 && lastUserReportCounter > 0 && (counter = Math.max(0, lastReportCounter - lastUserReportCounter))) {
+          counterObject.html(counter >= 10 ? "9+" : counter);
+        }
+      });
+    </script>
+
+
+                </li>
+           
+        </ul>
+    
+</div>
+            
+
+                        
+                <nav id="navi-main" class="header__navi" data-navi="true">
+    <ul>
+    <li><a href="https://skm.trojmiasto.pl/">SKM</a></li>
+    <li><a href="https://skm.trojmiasto.pl/#pkm">PKM</a></li>
+    <li><a href="https://ztm.trojmiasto.pl/">ZTM Gdańsk</a></li>
+    <li><a href="https://zkmgdynia.trojmiasto.pl/">ZKM Gdynia</a></li>
+    <li><a href="//komunikacja.trojmiasto.pl/lotnisko/">Lotnisko</a></li>
+    <li><a href="//komunikacja.trojmiasto.pl/tramwaj_wodny/">Żegluga Gdańska</a></li>
+    <li><a href="//komunikacja.trojmiasto.pl/#promy">Promy</a></li>
+    <li class="last">
+        <a href="javascript:void(0)" class="more" data-navi-more="true">więcej <span></span></a>       
+        <div class="headerNavi__menu headerNavi__menu--services" data-naviServices="true">
+                
+    
+        <ul class="header__navi__pagemap"><li class="header__navi__pagemap__item"><a class="aktywne" href="https://aktywne.trojmiasto.pl/"><span>Aktywne Trójmiasto</span></a></li><li class="header__navi__pagemap__item"><a class="ankiety" href="https://www.trojmiasto.pl/ankiety/"><span>Ankiety</span></a></li><li class="header__navi__pagemap__item"><a class="biznes" href="https://biznes.trojmiasto.pl/"><span>Biznes</span></a></li><li class="header__navi__pagemap__item"><a class="deluxe" href="https://deluxe.trojmiasto.pl/"><span>Deluxe</span></a></li><li class="header__navi__pagemap__item"><a class="dziecko" href="https://dziecko.trojmiasto.pl/"><span>Dziecko</span></a></li><li class="header__navi__pagemap__item"><a class="katalog" href="https://katalog.trojmiasto.pl/"><span>Firmy z Trójmiasta</span></a></li><li class="header__navi__pagemap__item"><a class="forum" href="https://forum.trojmiasto.pl/"><span>Forum</span></a></li><li class="header__navi__pagemap__item"><a class="gdzie-zjesc" href="https://www.trojmiasto.pl/gdzie-zjesc/"><span>Gdzie zjeść</span></a></li><li class="header__navi__pagemap__item"><a class="historia" href="https://historia.trojmiasto.pl/"><span>Historia</span></a></li><li class="header__navi__pagemap__item"><a class="horoskop" href="https://horoskop.trojmiasto.pl/"><span>Horoskop</span></a></li><li class="header__navi__pagemap__item"><a class="imprezy" href="https://imprezy.trojmiasto.pl/kalendarz-imprez/"><span><strong>Imprezy i wydarzenia</strong></span></a></li><li class="header__navi__pagemap__item"><a class="dom" href="https://dom.trojmiasto.pl/inwestycje/"><span>Inwestycje</span></a></li></ul><ul class="header__navi__pagemap"><li class="header__navi__pagemap__item"><a class="kamery" href="https://www.trojmiasto.pl/kamery/"><span>Kamery</span></a></li><li class="header__navi__pagemap__item"><a class="kino" href="https://kino.trojmiasto.pl/"><span>Kino</span></a></li><li class="header__navi__pagemap__item"><a class="komunikacja" href="https://komunikacja.trojmiasto.pl/"><span>Komunikacja</span></a></li><li class="header__navi__pagemap__item"><a class="konkursy" href="https://konkursy.trojmiasto.pl/"><span>Konkursy</span></a></li><li class="header__navi__pagemap__item"><a class="kulinaria" href="https://kulinaria.trojmiasto.pl/"><span>Kulinaria</span></a></li><li class="header__navi__pagemap__item"><a class="kultura" href="https://kultura.trojmiasto.pl/"><span>Kultura</span></a></li><li class="header__navi__pagemap__item"><a class="komunikacja" href="https://komunikacja.trojmiasto.pl/lotnisko/"><span>Lotnisko - loty</span></a></li><li class="header__navi__pagemap__item"><a class="mapa" href="https://mapa.trojmiasto.pl/"><span>Mapa</span></a></li><li class="header__navi__pagemap__item"><a class="moto" href="https://moto.trojmiasto.pl/"><span>Moto</span></a></li><li class="header__navi__pagemap__item"><a class="nauka" href="https://nauka.trojmiasto.pl/"><span>Nauka</span></a></li><li class="header__navi__pagemap__item"><a class="dom" href="https://dom.trojmiasto.pl/"><span><strong>Nieruchomości</strong></span></a></li><li class="header__navi__pagemap__item"><a class="ogloszenia" href="https://ogloszenia.trojmiasto.pl/"><span>Ogłoszenia</span></a></li></ul><ul class="header__navi__pagemap"><li class="header__navi__pagemap__item"><a class="galeria" href="https://galeria.trojmiasto.pl/Panoramy-360,0,14.html"><span>Panoramy</span></a></li><li class="header__navi__pagemap__item"><a class="pkm" href="https://pkm.trojmiasto.pl/#pkm"><span>PKM - rozkład jazdy</span></a></li><li class="header__navi__pagemap__item"><a class="Pogoda" href="https://pogoda.trojmiasto.pl/"><span>Pogoda</span></a></li><li class="header__navi__pagemap__item"><a class="wiadomosci" href="https://nekrologi.trojmiasto.pl/"><span>Pożegnania</span></a></li><li class="header__navi__pagemap__item"><a class="praca" href="https://praca.trojmiasto.pl/"><span>Praca</span></a></li><li class="header__navi__pagemap__item"><a class="promocje" href="https://promocje.trojmiasto.pl/"><span>Promocje</span></a></li><li class="header__navi__pagemap__item"><a class="quizy" href="https://www.trojmiasto.pl/quizy/"><span>Quizy</span></a></li><li class="header__navi__pagemap__item"><a class="katalog" href="https://oceniaj.trojmiasto.pl/"><span>Ranking</span></a></li><li class="header__navi__pagemap__item"><a class="raport" href="https://www.trojmiasto.pl/raport/"><span>Raport z Trójmiasta</span></a></li><li class="header__navi__pagemap__item"><a class="rowery" href="https://rowery.trojmiasto.pl/"><span>Rowery</span></a></li><li class="header__navi__pagemap__item"><a class="pkp" href="https://pkp.trojmiasto.pl/"><span>Rozkład PKP</span></a></li></ul><ul class="header__navi__pagemap header__navi__pagemap--a2"><li class="header__navi__pagemap__item"><a class="rozrywka" href="https://rozrywka.trojmiasto.pl/"><span>Rozrywka</span></a></li><li class="header__navi__pagemap__item"><a class="skm" href="https://skm.trojmiasto.pl/"><span>SKM - rozkład jazdy</span></a></li><li class="header__navi__pagemap__item"><a class="sport" href="https://sport.trojmiasto.pl/"><span>Sport</span></a></li><li class="header__navi__pagemap__item"><a class="" href="https://tv.trojmiasto.pl/"><span>Trojmiasto TV</span></a></li><li class="header__navi__pagemap__item"><a class="przewodnik" href="https://przewodnik.trojmiasto.pl/"><span>Turystyka</span></a></li><li class="header__navi__pagemap__item"><a class="wiadomosci" href="https://www.trojmiasto.pl/wiadomosci/"><span><strong>Wiadomości</strong></span></a></li><li class="header__navi__pagemap__item"><a class="galeria" href="https://galeria.trojmiasto.pl/"><span>Zdjęcia</span></a></li><li class="header__navi__pagemap__item"><a class="zdrowie" href="https://zdrowie.trojmiasto.pl/"><span>Zdrowie, moda i uroda</span></a></li><li class="header__navi__pagemap__item"><a class="zkmgdynia" href="https://zkmgdynia.trojmiasto.pl/"><span>ZKM Gdynia</span></a></li><li class="header__navi__pagemap__item"><a class="ztm" href="https://ztm.trojmiasto.pl/"><span>ZTM Gdańsk</span></a></li><li class="header__navi__pagemap__item"><a class="zwierzaki" href="https://zwierzaki.trojmiasto.pl/"><span>Zwierzaki</span></a></li></ul><ul class="header__navi__pagemap header__navi__pagemap--a2"></ul>
+            <div class="headerNaviApps">
+                <span>Nasze aplikacje:</span>
+                <span class="headerNaviApps__ico headerNaviApps__ico--android"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="17px" height="19px" viewBox="0 0 434.698 513.337" enable-background="new 0 0 434.698 513.337"
+	 xml:space="preserve">
+<g>
+	<path d="M434.698,199.027c0-18.859-15.342-34.201-34.201-34.201s-34.201,15.342-34.201,34.201v130.82
+		c0,18.859,15.342,34.202,34.201,34.202s34.201-15.343,34.201-34.202V199.027z"/>
+	<path d="M68.402,199.027c0-18.859-15.343-34.201-34.201-34.201S0,180.168,0,199.027v130.82
+		c0,18.859,15.342,34.202,34.201,34.202s34.201-15.343,34.201-34.202V199.027z"/>
+	<path d="M77.294,376.019c0,18.7,15.159,33.859,33.859,33.859h19.666v69.258c0,18.858,15.342,34.201,34.201,34.201
+		c18.859,0,34.201-15.343,34.201-34.201v-69.258h36.254v69.258c0,18.858,15.344,34.201,34.203,34.201
+		c18.857,0,34.201-15.343,34.201-34.201v-69.258h19.665c18.7,0,33.859-15.159,33.859-33.859V170.212H77.294V376.019z"/>
+	<path d="M357.403,162.089c0-47.425-27.669-88.877-68.914-111.374l22.13-39.922c0.94-1.698,1.165-3.661,0.631-5.527
+		c-0.536-1.866-1.766-3.412-3.464-4.353C306.708,0.316,305.494,0,304.272,0c-2.646,0-5.085,1.436-6.366,3.746l-22.532,40.649
+		c-17.68-7.439-37.327-11.587-58.026-11.587c-20.698,0-40.345,4.148-58.024,11.587l-22.532-40.65C135.51,1.436,133.071,0,130.426,0
+		c-1.221,0-2.437,0.316-3.514,0.913c-1.698,0.941-2.927,2.487-3.463,4.353c-0.535,1.866-0.311,3.829,0.63,5.526l22.13,39.923
+		c-41.245,22.497-68.914,63.949-68.914,111.374c0,0.333,0.011,0.665,0.014,0.998c-0.003,0.181-0.014,0.359-0.014,0.541v1.111
+		h280.109v-1.111c0-0.182-0.011-0.36-0.014-0.541C357.393,162.754,357.403,162.423,357.403,162.089z M152.708,107.88
+		c-4.903,0-8.893-3.989-8.893-8.893s3.99-8.893,8.893-8.893s8.893,3.99,8.893,8.893S157.612,107.88,152.708,107.88z M281.989,107.88
+		c-4.903,0-8.893-3.989-8.893-8.893s3.989-8.893,8.893-8.893c4.904,0,8.894,3.99,8.894,8.893S286.894,107.88,281.989,107.88z"/>
+</g>
+</svg>
+</span>
+                <a href="https://play.google.com/store/apps/details?id=pl.trojmiasto.mobile&hl=pl" class="headerNaviApps__label">Android</a>
+                <span class="headerNaviApps__ico headerNaviApps__ico--ios"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="20px" height="16px" viewBox="0 0 416.685 511.743" enable-background="new 0 0 416.685 511.743"
+	 xml:space="preserve">
+<path d="M348.002,271.872c0.719,77.444,67.937,103.216,68.683,103.542c-0.569,1.818-10.74,36.726-35.415,72.784
+	c-21.329,31.175-43.464,62.234-78.337,62.878c-34.266,0.631-45.283-20.318-84.459-20.318c-39.163,0-51.405,19.675-83.84,20.951
+	c-33.66,1.274-59.293-33.71-80.8-64.771C9.889,383.402-23.695,267.405,21.399,189.104c22.402-38.885,62.436-63.508,105.89-64.14
+	c33.052-0.63,64.25,22.238,84.457,22.238c20.196,0,58.107-27.5,97.964-23.462c16.686,0.695,63.521,6.74,93.597,50.762
+	C400.883,176.004,347.422,207.127,348.002,271.872 M283.604,81.707C301.476,60.075,313.502,29.963,310.221,0
+	c-25.758,1.035-56.907,17.166-75.383,38.785c-16.559,19.145-31.061,49.789-27.148,79.157
+	C236.403,120.165,265.733,103.353,283.604,81.707"/>
+</svg>
+</span>
+                <a href="https://itunes.apple.com/pl/app/trojmiasto-pl/id522385310?l=pl&mt=8" class="headerNaviApps__label">iPhone</a>
+            </div>
+        </div>
+    </li>
+</ul>
+    <div class="clear"></div>
+</nav>
+            
+
+                            
+                                                                                                                            <div class="banner-a banner--komunikacja">
+                                                                                                                                                    <ins data-revive-zoneid="587" data-revive-block="1"
+     data-revive-id="3d1e790fba67c63e0197bd8341256420"></ins>
+<script async src="https://r.trojmiasto.pl/www/delivery/asyncjs.php"></script>
+                                </div>
+                                                                                        
+            
+                        
+                    <div id="featured" class="headerFeatured"><h3>Polecamy</h3><ul id="featured-list" class="headerFeatured__list">
+                     <li > <a title="jarmark (23 lipca 2022 - 14 sierpnia 2022)" href="https://www.trojmiasto.pl/rd/?t=p&amp;id_polecamy=75283&amp;url=https%3A%2F%2Fwww.trojmiasto.pl%2Fjarmark-dominikanski&hash=4935d995" onmousedown="__rd(this,'https://www.trojmiasto.pl/rd/?t=p&amp;id_polecamy=75283&amp;url=https%3A%2F%2Fwww.trojmiasto.pl%2Fjarmark-dominikanski&hash=4935d995');return true;" data-url="https://www.trojmiasto.pl/jarmark-dominikanski" class="l strong" data-zlicz_polecamy="75283"><strong>Jarmark św. Dominika</strong></a> </li> 
+                     <li > <a title="w plenerze, degustacja (29 lipca 2022 - 30 lipca 2022)" href="https://www.trojmiasto.pl/rd/?t=p&amp;id_polecamy=75304&amp;url=https%3A%2F%2Fkulinaria.trojmiasto.pl%2FCraft-Beer-Fiesta-2022-imp522166.html&hash=fa86fd1d" onmousedown="__rd(this,'https://www.trojmiasto.pl/rd/?t=p&amp;id_polecamy=75304&amp;url=https%3A%2F%2Fkulinaria.trojmiasto.pl%2FCraft-Beer-Fiesta-2022-imp522166.html&hash=fa86fd1d');return true;" data-url="https://kulinaria.trojmiasto.pl/Craft-Beer-Fiesta-2022-imp522166.html" class="l" data-zlicz_polecamy="75304">Craft Beer Fiesta</a> </li> 
+                     <li > <a title="festiwal filmowy, warsztaty (2 sierpnia 2022 - 7 sierpnia 2022)" href="https://www.trojmiasto.pl/rd/?t=p&amp;id_polecamy=75305&amp;url=https%3A%2F%2Fwww.trojmiasto.pl%2Foctopus-film-festival&hash=286441b0" onmousedown="__rd(this,'https://www.trojmiasto.pl/rd/?t=p&amp;id_polecamy=75305&amp;url=https%3A%2F%2Fwww.trojmiasto.pl%2Foctopus-film-festival&hash=286441b0');return true;" data-url="https://www.trojmiasto.pl/octopus-film-festival" class="l" data-zlicz_polecamy="75305">Octopus Film Festival</a> </li> 
+                     <li > <a title="piosenka aktorska, recital (6 sierpnia 2022)" href="https://www.trojmiasto.pl/rd/?t=p&amp;id_polecamy=75306&amp;url=https%3A%2F%2Fkultura.trojmiasto.pl%2FArtur-Andrus-imp521724.html&hash=07b2a69c" onmousedown="__rd(this,'https://www.trojmiasto.pl/rd/?t=p&amp;id_polecamy=75306&amp;url=https%3A%2F%2Fkultura.trojmiasto.pl%2FArtur-Andrus-imp521724.html&hash=07b2a69c');return true;" data-url="https://kultura.trojmiasto.pl/Artur-Andrus-imp521724.html" class="l" data-zlicz_polecamy="75306">Artur Andrus </a> </li> 
+                     <li > <a title="folk / reggae / world, koncert pop (6 sierpnia 2022)" href="https://www.trojmiasto.pl/rd/?t=p&amp;id_polecamy=75307&amp;url=https%3A%2F%2Fimprezy.trojmiasto.pl%2FJulia-Pietrucha-Folk-it-tour-imp522051.html&hash=f3c0f71e" onmousedown="__rd(this,'https://www.trojmiasto.pl/rd/?t=p&amp;id_polecamy=75307&amp;url=https%3A%2F%2Fimprezy.trojmiasto.pl%2FJulia-Pietrucha-Folk-it-tour-imp522051.html&hash=f3c0f71e');return true;" data-url="https://imprezy.trojmiasto.pl/Julia-Pietrucha-Folk-it-tour-imp522051.html" class="l" data-zlicz_polecamy="75307">Julia Pietrucha</a> </li> 
+                     <li > <a title="koncert hip-hopowy (28 lipca 2022)" href="https://www.trojmiasto.pl/rd/?t=p&amp;id_polecamy=75312&amp;url=https%3A%2F%2Fimprezy.trojmiasto.pl%2FLASY-Avi-x-Louis-Villain-imp521295.html&hash=2256bd6d" onmousedown="__rd(this,'https://www.trojmiasto.pl/rd/?t=p&amp;id_polecamy=75312&amp;url=https%3A%2F%2Fimprezy.trojmiasto.pl%2FLASY-Avi-x-Louis-Villain-imp521295.html&hash=2256bd6d');return true;" data-url="https://imprezy.trojmiasto.pl/LASY-Avi-x-Louis-Villain-imp521295.html" class="l" data-zlicz_polecamy="75312">Avi x Louis Villain</a> </li> 
+    
+            <li class="last link-more">
+            <a href="https://imprezy.trojmiasto.pl/kalendarz-imprez/patronat,1.html" class="l">+<span class="link-more-counter">642</span>
+            <span class="link-more-raquo">&raquo;</span></a>
+        </li>
+    
+</ul></div>
+    <img class="static_counter" src="https://c.trojmiasto.pl/glowna/polecamy/1.png?&mid=75283&mid=75304&mid=75305&mid=75306&mid=75307&mid=75312" alt="" />
+
+            
+        
+                
+                    
+
+            </div>
+</header>
+
+
+<div id="body">
+    
+    <div class="section-subcontent desktop">
+        <div class="title-long">
+           <div class="sq skm no-print"></div>
+            <img src="https://s-trojmiasto.pl/_img/toplong2/logo_new.gif" alt="logo" class="print" />
+            <p>Rozkład jazdy kolejki SKM i PKM w Trójmieście</p>
+        </div>
+
+                <div class="pkm-skm-search-wrap">
+    <form id="skm_search_form" action="https://skm.trojmiasto.pl/rozklad/" method="GET">
+    <div class="change_stations">
+        <img src="https://s-trojmiasto.pl/_img/komunikacja/change_stations.png" alt=""/>
+    </div>
+    <div class="row od-station">
+        <div class="left">
+            <span>Ze stacji</span>
+        </div>
+        <div class="right">
+                <select id="stacja_od" name="from" class="long chzn-select">
+                                                                        <option data-keywords="babi,dol" value="17822" >Babi Dół</option>
+                                                    <option data-keywords="borkowo" value="17848" >Borkowo</option>
+                                                    <option data-keywords="bozepole,wielkie" value="5421" >Bożepole Wielkie</option>
+                                                    <option data-keywords="dzierzazno" value="117168" >Dzierżążno</option>
+                                                    <option data-keywords="gdansk,bretowo" value="257533" >Gdańsk Brętowo</option>
+                                                    <option data-keywords="gdansk,glowny" value="7500" >GDAŃSK GŁÓWNY</option>
+                                                    <option data-keywords="gdansk,jasien" value="257532" >Gdańsk Jasień</option>
+                                                    <option data-keywords="gdansk,kielpinek" value="257542" >Gdańsk Kiełpinek</option>
+                                                    <option data-keywords="gdansk,matarnia" value="257531" >Gdańsk Matarnia</option>
+                                                    <option data-keywords="gdansk,niedzwiednik" value="257534" >Gdańsk Niedźwiednik</option>
+                                                    <option data-keywords="gdansk,oliwa" value="251577" >GDAŃSK OLIWA</option>
+                                                    <option data-keywords="gdansk,osowa" value="6122" >GDAŃSK OSOWA</option>
+                                                    <option data-keywords="gdansk,politechnika" value="7526" >Gdańsk Politechnika</option>
+                                                    <option data-keywords="gdansk,port,lotniczy,lotnisko" value="257530" >Gdańsk Port Lotniczy</option>
+                                                    <option data-keywords="gdansk,przymorze,uniwersytet" value="7567" >Gdańsk Przymorze - Uniwersytet</option>
+                                                    <option data-keywords="gdansk,rebiechowo" value="257521" >Gdańsk Rębiechowo</option>
+                                                    <option data-keywords="gdansk,stocznia" value="7518" >Gdańsk Stocznia</option>
+                                                    <option data-keywords="gdansk,strzyza" value="257535" >Gdańsk Strzyża</option>
+                                                    <option data-keywords="gdansk,srodmiescie" value="258458" >Gdańsk Śródmieście</option>
+                                                    <option data-keywords="gdansk,wrzeszcz" value="7534" selected="selected">GDAŃSK WRZESZCZ</option>
+                                                    <option data-keywords="gdansk,zaspa" value="7559" >Gdańsk Zaspa</option>
+                                                    <option data-keywords="gdansk,zabianka,awfis" value="7617" >Gdańsk Żabianka - AWFiS</option>
+                                                    <option data-keywords="gdynia,chylonia" value="6031" >GDYNIA CHYLONIA</option>
+                                                    <option data-keywords="gdynia,cisowa" value="178829" >Gdynia Cisowa</option>
+                                                    <option data-keywords="gdynia,glowna" value="5900" >GDYNIA GŁÓWNA</option>
+                                                    <option data-keywords="gdynia,grabowek" value="6056" >Gdynia Grabówek</option>
+                                                    <option data-keywords="gdynia,karwiny" value="260711" >Gdynia Karwiny</option>
+                                                    <option data-keywords="gdynia,leszczynki" value="6064" >Gdynia Leszczynki</option>
+                                                    <option data-keywords="gdynia,orlowo" value="5934" >Gdynia Orłowo</option>
+                                                    <option data-keywords="gdynia,redlowo" value="5918" >Gdynia Redłowo</option>
+                                                    <option data-keywords="gdynia,stadion" value="260710" >Gdynia Stadion</option>
+                                                    <option data-keywords="gdynia,stocznia,uniwersytet,morski" value="6049" >Gdynia Stocznia - Uniwersytet Morski</option>
+                                                    <option data-keywords="gdynia,wzgorze,sw.,maksymiliana" value="5926" >Gdynia Wzgórze św. Maksym.</option>
+                                                    <option data-keywords="godetowo" value="5413" >Godętowo</option>
+                                                    <option data-keywords="golubie,kaszubskie" value="17749" >Gołubie Kaszub.</option>
+                                                    <option data-keywords="goscicino,wejherowskie" value="6593" >Gościcino Wejherowskie</option>
+                                                    <option data-keywords="kartuzy" value="18002" >KARTUZY</option>
+                                                    <option data-keywords="kielpino,kartuskie" value="17798" >Kiełpino Kart.</option>
+                                                    <option data-keywords="koscierzyna" value="17509" >KOŚCIERZYNA</option>
+                                                    <option data-keywords="krzeszna" value="17756" >Krzeszna</option>
+                                                    <option data-keywords="leszno,kartuskie" value="18036" >Leszno Kartuskie</option>
+                                                    <option data-keywords="lebork" value="5256" >LĘBORK</option>
+                                                    <option data-keywords="lebork,mosty" value="254531" >Lębork Mosty</option>
+                                                    <option data-keywords="luzino" value="5447" >Luzino</option>
+                                                    <option data-keywords="pepowo,kartuskie" value="17863" >Pępowo Kartuskie</option>
+                                                    <option data-keywords="reda" value="6106" >REDA</option>
+                                                    <option data-keywords="reda,pieleszewo" value="6114" >Reda Pieleszewo</option>
+                                                    <option data-keywords="rebiechowo" value="17871" >Rębiechowo</option>
+                                                    <option data-keywords="rumia" value="6098" >RUMIA</option>
+                                                    <option data-keywords="rumia,janowo" value="6080" >Rumia Janowo</option>
+                                                    <option data-keywords="skorzewo" value="17731" >Skorzewo</option>
+                                                    <option data-keywords="slawki" value="17772" >Sławki</option>
+                                                    <option data-keywords="somonino" value="17780" >SOMONINO</option>
+                                                    <option data-keywords="sopot" value="5942" >SOPOT</option>
+                                                    <option data-keywords="sopot,kamienny,potok" value="5959" >Sopot Kamienny Potok</option>
+                                                    <option data-keywords="sopot,wyscigi" value="5967" >Sopot Wyścigi</option>
+                                                    <option data-keywords="strzebielino,morskie" value="5439" >Strzebielino Morskie</option>
+                                                    <option data-keywords="wejherowo" value="6304" >WEJHEROWO</option>
+                                                    <option data-keywords="wejherowo,nanice" value="6320" >Wejherowo Nanice</option>
+                                                    <option data-keywords="wejherowo,smiechowo" value="6312" >Wejherowo Śmiechowo</option>
+                                                    <option data-keywords="wiezyca" value="17764" >Wieżyca</option>
+                                                    <option data-keywords="zukowo" value="257551" >Żukowo</option>
+                                                    <option data-keywords="zukowo,wschodnie" value="17855" >Żukowo Wsch.</option>
+                                                            </select>
+        </div>
+    </div>
+    <div class="row do-station">
+        <div class="left">
+            <span>Do stacji</span>
+        </div>
+        <div class="right">
+            <select id="stacja_do" name="to" class="long chzn-select">
+                                                    <option data-keywords="babi,dol" value="17822" >Babi Dół</option>
+                                    <option data-keywords="borkowo" value="17848" >Borkowo</option>
+                                    <option data-keywords="bozepole,wielkie" value="5421" >Bożepole Wielkie</option>
+                                    <option data-keywords="dzierzazno" value="117168" >Dzierżążno</option>
+                                    <option data-keywords="gdansk,bretowo" value="257533" >Gdańsk Brętowo</option>
+                                    <option data-keywords="gdansk,glowny" value="7500" >GDAŃSK GŁÓWNY</option>
+                                    <option data-keywords="gdansk,jasien" value="257532" >Gdańsk Jasień</option>
+                                    <option data-keywords="gdansk,kielpinek" value="257542" >Gdańsk Kiełpinek</option>
+                                    <option data-keywords="gdansk,matarnia" value="257531" >Gdańsk Matarnia</option>
+                                    <option data-keywords="gdansk,niedzwiednik" value="257534" >Gdańsk Niedźwiednik</option>
+                                    <option data-keywords="gdansk,oliwa" value="251577" >GDAŃSK OLIWA</option>
+                                    <option data-keywords="gdansk,osowa" value="6122" >GDAŃSK OSOWA</option>
+                                    <option data-keywords="gdansk,politechnika" value="7526" >Gdańsk Politechnika</option>
+                                    <option data-keywords="gdansk,port,lotniczy,lotnisko" value="257530" selected="selected">Gdańsk Port Lotniczy</option>
+                                    <option data-keywords="gdansk,przymorze,uniwersytet" value="7567" >Gdańsk Przymorze - Uniwersytet</option>
+                                    <option data-keywords="gdansk,rebiechowo" value="257521" >Gdańsk Rębiechowo</option>
+                                    <option data-keywords="gdansk,stocznia" value="7518" >Gdańsk Stocznia</option>
+                                    <option data-keywords="gdansk,strzyza" value="257535" >Gdańsk Strzyża</option>
+                                    <option data-keywords="gdansk,srodmiescie" value="258458" >Gdańsk Śródmieście</option>
+                                    <option data-keywords="gdansk,wrzeszcz" value="7534" >GDAŃSK WRZESZCZ</option>
+                                    <option data-keywords="gdansk,zaspa" value="7559" >Gdańsk Zaspa</option>
+                                    <option data-keywords="gdansk,zabianka,awfis" value="7617" >Gdańsk Żabianka - AWFiS</option>
+                                    <option data-keywords="gdynia,chylonia" value="6031" >GDYNIA CHYLONIA</option>
+                                    <option data-keywords="gdynia,cisowa" value="178829" >Gdynia Cisowa</option>
+                                    <option data-keywords="gdynia,glowna" value="5900" >GDYNIA GŁÓWNA</option>
+                                    <option data-keywords="gdynia,grabowek" value="6056" >Gdynia Grabówek</option>
+                                    <option data-keywords="gdynia,karwiny" value="260711" >Gdynia Karwiny</option>
+                                    <option data-keywords="gdynia,leszczynki" value="6064" >Gdynia Leszczynki</option>
+                                    <option data-keywords="gdynia,orlowo" value="5934" >Gdynia Orłowo</option>
+                                    <option data-keywords="gdynia,redlowo" value="5918" >Gdynia Redłowo</option>
+                                    <option data-keywords="gdynia,stadion" value="260710" >Gdynia Stadion</option>
+                                    <option data-keywords="gdynia,stocznia,uniwersytet,morski" value="6049" >Gdynia Stocznia - Uniwersytet Morski</option>
+                                    <option data-keywords="gdynia,wzgorze,sw.,maksymiliana" value="5926" >Gdynia Wzgórze św. Maksym.</option>
+                                    <option data-keywords="godetowo" value="5413" >Godętowo</option>
+                                    <option data-keywords="golubie,kaszubskie" value="17749" >Gołubie Kaszub.</option>
+                                    <option data-keywords="goscicino,wejherowskie" value="6593" >Gościcino Wejherowskie</option>
+                                    <option data-keywords="kartuzy" value="18002" >KARTUZY</option>
+                                    <option data-keywords="kielpino,kartuskie" value="17798" >Kiełpino Kart.</option>
+                                    <option data-keywords="koscierzyna" value="17509" >KOŚCIERZYNA</option>
+                                    <option data-keywords="krzeszna" value="17756" >Krzeszna</option>
+                                    <option data-keywords="leszno,kartuskie" value="18036" >Leszno Kartuskie</option>
+                                    <option data-keywords="lebork" value="5256" >LĘBORK</option>
+                                    <option data-keywords="lebork,mosty" value="254531" >Lębork Mosty</option>
+                                    <option data-keywords="luzino" value="5447" >Luzino</option>
+                                    <option data-keywords="pepowo,kartuskie" value="17863" >Pępowo Kartuskie</option>
+                                    <option data-keywords="reda" value="6106" >REDA</option>
+                                    <option data-keywords="reda,pieleszewo" value="6114" >Reda Pieleszewo</option>
+                                    <option data-keywords="rebiechowo" value="17871" >Rębiechowo</option>
+                                    <option data-keywords="rumia" value="6098" >RUMIA</option>
+                                    <option data-keywords="rumia,janowo" value="6080" >Rumia Janowo</option>
+                                    <option data-keywords="skorzewo" value="17731" >Skorzewo</option>
+                                    <option data-keywords="slawki" value="17772" >Sławki</option>
+                                    <option data-keywords="somonino" value="17780" >SOMONINO</option>
+                                    <option data-keywords="sopot" value="5942" >SOPOT</option>
+                                    <option data-keywords="sopot,kamienny,potok" value="5959" >Sopot Kamienny Potok</option>
+                                    <option data-keywords="sopot,wyscigi" value="5967" >Sopot Wyścigi</option>
+                                    <option data-keywords="strzebielino,morskie" value="5439" >Strzebielino Morskie</option>
+                                    <option data-keywords="wejherowo" value="6304" >WEJHEROWO</option>
+                                    <option data-keywords="wejherowo,nanice" value="6320" >Wejherowo Nanice</option>
+                                    <option data-keywords="wejherowo,smiechowo" value="6312" >Wejherowo Śmiechowo</option>
+                                    <option data-keywords="wiezyca" value="17764" >Wieżyca</option>
+                                    <option data-keywords="zukowo" value="257551" >Żukowo</option>
+                                    <option data-keywords="zukowo,wschodnie" value="17855" >Żukowo Wsch.</option>
+                            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="left">
+            <span>Data</span>
+        </div>
+        <div class="right">
+
+            <input type="radio" name="date_mode" value="1" checked="checked" /> odjazdu
+            <input type="radio" name="date_mode" value="2"  /> przyjazdu
+        </div>  
+    </div>
+    <div class="row hour-row">
+        <div class="left"></div>
+        <div class="right" style="position:relative">
+            <div class="date-wrapper">
+            <input type="text" name="date" value="2022-07-24" class="date format-y-m-d divider-dash"/>
+            </div>
+            <!-- <dd class="date"><input class="format-y-m-d divider-dash range-low-today no-transparency" id="superbox_data_" name="data" readonly="readonly" value="24/07/2022" type="text" />
+                <div class="date-polish" id="date-polish_"></div></dd> -->
+            <span>Godzina</span>
+            <input type="text" name="hour" value="23:03" class="hour" id="hour1"  />
+        </div>
+            <div class="hour-picker">
+                    <h3 id="hour-h3">Godziny</h3>
+                   
+                   
+                    
+
+                    <table class="pick-hour">
+                          <tr>
+                            <td class="first td-active">00</td>
+                            <td class="td-active">01</td>      
+                            <td class="td-active">02</td>
+                            <td class="td-active">03</td>
+                            <td class="td-active">04</td>      
+                            <td class="td-active">05</td>
+                          </tr>
+                          <tr>
+                            <td class="td-active">06</td>
+                            <td class="td-active">07</td>      
+                            <td class="td-active">08</td>
+                            <td class="td-active">09</td>
+                            <td class="td-active">10</td>      
+                            <td class="td-active">11</td>
+                          </tr>
+                          <tr>
+                            <td class="td-active">12</td>
+                            <td class="td-active">13</td>      
+                            <td class="td-active">14</td>
+                            <td class="td-active">15</td>
+                            <td class="td-active">16</td>      
+                            <td class="td-active">17</td>
+                          </tr>
+                          <tr>
+                            <td class="td-active">18</td>
+                            <td class="td-active">19</td>      
+                            <td class="td-active">20</td>
+                            <td class="td-active">21</td>
+                            <td class="td-active">22</td>      
+                            <td class="td-active">23</td>
+                          </tr>
+                          
+                    </table>
+                     <h3 id="minute-h3" class="inactive-h3">Minuty</h3>
+                    <table class="pick-minute">
+                          <tr>
+                            <td class="first">00</td>
+                            <td>05</td>      
+                            <td>10</td>
+                            <td>15</td>
+                            <td>20</td>      
+                            <td>25</td>
+                          </tr>
+                          <tr>
+                            <td>30</td>
+                            <td>35</td>      
+                            <td>40</td>
+                            <td>45</td>
+                            <td>50</td>      
+                            <td>55</td>
+                          </tr>
+                          
+                    </table>
+                </div>
+    </div>
+
+    <div class="row details-link-row" >
+        <div class="left"></div>
+         <div class="right">
+            <a id="skm_detailed_search_link_detailed" class="detailed" href="javascript:void(0);">wyszukiwanie szczegółowe</a>
+            <input class="skm_search_button" type="button" value="Szukaj">
+        </div>
+    </div>
+   
+    
+        <div id="skm_detailed_search" style="display:none" >
+                <div class="row">
+            <div class="left">
+                <span>Przez stację</span>
+            </div>
+            <div class="right">
+                    <select id="via1" name="via1" class="long chzn-select">
+                        <option value="0">-- wybierz stację pośrednią --</option>
+                                                    <option data-keywords="babi,dol" value="17822" >Babi Dół</option>
+                                                    <option data-keywords="borkowo" value="17848" >Borkowo</option>
+                                                    <option data-keywords="bozepole,wielkie" value="5421" >Bożepole Wielkie</option>
+                                                    <option data-keywords="dzierzazno" value="117168" >Dzierżążno</option>
+                                                    <option data-keywords="gdansk,bretowo" value="257533" >Gdańsk Brętowo</option>
+                                                    <option data-keywords="gdansk,glowny" value="7500" >GDAŃSK GŁÓWNY</option>
+                                                    <option data-keywords="gdansk,jasien" value="257532" >Gdańsk Jasień</option>
+                                                    <option data-keywords="gdansk,kielpinek" value="257542" >Gdańsk Kiełpinek</option>
+                                                    <option data-keywords="gdansk,matarnia" value="257531" >Gdańsk Matarnia</option>
+                                                    <option data-keywords="gdansk,niedzwiednik" value="257534" >Gdańsk Niedźwiednik</option>
+                                                    <option data-keywords="gdansk,oliwa" value="251577" >GDAŃSK OLIWA</option>
+                                                    <option data-keywords="gdansk,osowa" value="6122" >GDAŃSK OSOWA</option>
+                                                    <option data-keywords="gdansk,politechnika" value="7526" >Gdańsk Politechnika</option>
+                                                    <option data-keywords="gdansk,port,lotniczy" value="257530" >Gdańsk Port Lotniczy</option>
+                                                    <option data-keywords="gdansk,przymorze,uniwersytet" value="7567" >Gdańsk Przymorze - Uniwersytet</option>
+                                                    <option data-keywords="gdansk,rebiechowo" value="257521" >Gdańsk Rębiechowo</option>
+                                                    <option data-keywords="gdansk,stocznia" value="7518" >Gdańsk Stocznia</option>
+                                                    <option data-keywords="gdansk,strzyza" value="257535" >Gdańsk Strzyża</option>
+                                                    <option data-keywords="gdansk,srodmiescie" value="258458" >Gdańsk Śródmieście</option>
+                                                    <option data-keywords="gdansk,wrzeszcz" value="7534" >GDAŃSK WRZESZCZ</option>
+                                                    <option data-keywords="gdansk,zaspa" value="7559" >Gdańsk Zaspa</option>
+                                                    <option data-keywords="gdansk,zabianka,awfis" value="7617" >Gdańsk Żabianka - AWFiS</option>
+                                                    <option data-keywords="gdynia,chylonia" value="6031" >GDYNIA CHYLONIA</option>
+                                                    <option data-keywords="gdynia,cisowa" value="178829" >Gdynia Cisowa</option>
+                                                    <option data-keywords="gdynia,glowna" value="5900" >GDYNIA GŁÓWNA</option>
+                                                    <option data-keywords="gdynia,grabowek" value="6056" >Gdynia Grabówek</option>
+                                                    <option data-keywords="gdynia,karwiny" value="260711" >Gdynia Karwiny</option>
+                                                    <option data-keywords="gdynia,leszczynki" value="6064" >Gdynia Leszczynki</option>
+                                                    <option data-keywords="gdynia,orlowo" value="5934" >Gdynia Orłowo</option>
+                                                    <option data-keywords="gdynia,redlowo" value="5918" >Gdynia Redłowo</option>
+                                                    <option data-keywords="gdynia,stadion" value="260710" >Gdynia Stadion</option>
+                                                    <option data-keywords="gdynia,stocznia,uniwersytet,morski" value="6049" >Gdynia Stocznia - Uniwersytet Morski</option>
+                                                    <option data-keywords="gdynia,wzgorze,sw.,maksym." value="5926" >Gdynia Wzgórze św. Maksym.</option>
+                                                    <option data-keywords="godetowo" value="5413" >Godętowo</option>
+                                                    <option data-keywords="golubie,kaszub." value="17749" >Gołubie Kaszub.</option>
+                                                    <option data-keywords="goscicino,wejherowskie" value="6593" >Gościcino Wejherowskie</option>
+                                                    <option data-keywords="kartuzy" value="18002" >KARTUZY</option>
+                                                    <option data-keywords="kielpino,kart." value="17798" >Kiełpino Kart.</option>
+                                                    <option data-keywords="koscierzyna" value="17509" >KOŚCIERZYNA</option>
+                                                    <option data-keywords="krzeszna" value="17756" >Krzeszna</option>
+                                                    <option data-keywords="leszno,kartuskie" value="18036" >Leszno Kartuskie</option>
+                                                    <option data-keywords="lebork" value="5256" >LĘBORK</option>
+                                                    <option data-keywords="lebork,mosty" value="254531" >Lębork Mosty</option>
+                                                    <option data-keywords="luzino" value="5447" >Luzino</option>
+                                                    <option data-keywords="pepowo,kartuskie" value="17863" >Pępowo Kartuskie</option>
+                                                    <option data-keywords="reda" value="6106" >REDA</option>
+                                                    <option data-keywords="reda,pieleszewo" value="6114" >Reda Pieleszewo</option>
+                                                    <option data-keywords="rebiechowo" value="17871" >Rębiechowo</option>
+                                                    <option data-keywords="rumia" value="6098" >RUMIA</option>
+                                                    <option data-keywords="rumia,janowo" value="6080" >Rumia Janowo</option>
+                                                    <option data-keywords="skorzewo" value="17731" >Skorzewo</option>
+                                                    <option data-keywords="slawki" value="17772" >Sławki</option>
+                                                    <option data-keywords="somonino" value="17780" >SOMONINO</option>
+                                                    <option data-keywords="sopot" value="5942" >SOPOT</option>
+                                                    <option data-keywords="sopot,kamienny,potok" value="5959" >Sopot Kamienny Potok</option>
+                                                    <option data-keywords="sopot,wyscigi" value="5967" >Sopot Wyścigi</option>
+                                                    <option data-keywords="strzebielino,morskie" value="5439" >Strzebielino Morskie</option>
+                                                    <option data-keywords="wejherowo" value="6304" >WEJHEROWO</option>
+                                                    <option data-keywords="wejherowo,nanice" value="6320" >Wejherowo Nanice</option>
+                                                    <option data-keywords="wejherowo,smiechowo" value="6312" >Wejherowo Śmiechowo</option>
+                                                    <option data-keywords="wiezyca" value="17764" >Wieżyca</option>
+                                                    <option data-keywords="zukowo" value="257551" >Żukowo</option>
+                                                    <option data-keywords="zukowo,wsch." value="17855" >Żukowo Wsch.</option>
+                                            </select>
+            </div>
+        </div>
+        <div class="row" id="via2_box" style="display:none;">
+             <div class="left"></div>
+              <div class="right">
+                    <select name="via2" class="long chzn-select">
+                        <option value="0">-- wybierz stację pośrednią --</option>
+                                                    <option  data-keywords="babi,dol" value="17822" >Babi Dół</option>
+                                                    <option  data-keywords="borkowo" value="17848" >Borkowo</option>
+                                                    <option  data-keywords="bozepole,wielkie" value="5421" >Bożepole Wielkie</option>
+                                                    <option  data-keywords="dzierzazno" value="117168" >Dzierżążno</option>
+                                                    <option  data-keywords="gdansk,bretowo" value="257533" >Gdańsk Brętowo</option>
+                                                    <option  data-keywords="gdansk,glowny" value="7500" >GDAŃSK GŁÓWNY</option>
+                                                    <option  data-keywords="gdansk,jasien" value="257532" >Gdańsk Jasień</option>
+                                                    <option  data-keywords="gdansk,kielpinek" value="257542" >Gdańsk Kiełpinek</option>
+                                                    <option  data-keywords="gdansk,matarnia" value="257531" >Gdańsk Matarnia</option>
+                                                    <option  data-keywords="gdansk,niedzwiednik" value="257534" >Gdańsk Niedźwiednik</option>
+                                                    <option  data-keywords="gdansk,oliwa" value="251577" >GDAŃSK OLIWA</option>
+                                                    <option  data-keywords="gdansk,osowa" value="6122" >GDAŃSK OSOWA</option>
+                                                    <option  data-keywords="gdansk,politechnika" value="7526" >Gdańsk Politechnika</option>
+                                                    <option  data-keywords="gdansk,port,lotniczy" value="257530" >Gdańsk Port Lotniczy</option>
+                                                    <option  data-keywords="gdansk,przymorze,uniwersytet" value="7567" >Gdańsk Przymorze - Uniwersytet</option>
+                                                    <option  data-keywords="gdansk,rebiechowo" value="257521" >Gdańsk Rębiechowo</option>
+                                                    <option  data-keywords="gdansk,stocznia" value="7518" >Gdańsk Stocznia</option>
+                                                    <option  data-keywords="gdansk,strzyza" value="257535" >Gdańsk Strzyża</option>
+                                                    <option  data-keywords="gdansk,srodmiescie" value="258458" >Gdańsk Śródmieście</option>
+                                                    <option  data-keywords="gdansk,wrzeszcz" value="7534" >GDAŃSK WRZESZCZ</option>
+                                                    <option  data-keywords="gdansk,zaspa" value="7559" >Gdańsk Zaspa</option>
+                                                    <option  data-keywords="gdansk,zabianka,awfis" value="7617" >Gdańsk Żabianka - AWFiS</option>
+                                                    <option  data-keywords="gdynia,chylonia" value="6031" >GDYNIA CHYLONIA</option>
+                                                    <option  data-keywords="gdynia,cisowa" value="178829" >Gdynia Cisowa</option>
+                                                    <option  data-keywords="gdynia,glowna" value="5900" >GDYNIA GŁÓWNA</option>
+                                                    <option  data-keywords="gdynia,grabowek" value="6056" >Gdynia Grabówek</option>
+                                                    <option  data-keywords="gdynia,karwiny" value="260711" >Gdynia Karwiny</option>
+                                                    <option  data-keywords="gdynia,leszczynki" value="6064" >Gdynia Leszczynki</option>
+                                                    <option  data-keywords="gdynia,orlowo" value="5934" >Gdynia Orłowo</option>
+                                                    <option  data-keywords="gdynia,redlowo" value="5918" >Gdynia Redłowo</option>
+                                                    <option  data-keywords="gdynia,stadion" value="260710" >Gdynia Stadion</option>
+                                                    <option  data-keywords="gdynia,stocznia,uniwersytet,morski" value="6049" >Gdynia Stocznia - Uniwersytet Morski</option>
+                                                    <option  data-keywords="gdynia,wzgorze,sw.,maksym." value="5926" >Gdynia Wzgórze św. Maksym.</option>
+                                                    <option  data-keywords="godetowo" value="5413" >Godętowo</option>
+                                                    <option  data-keywords="golubie,kaszub." value="17749" >Gołubie Kaszub.</option>
+                                                    <option  data-keywords="goscicino,wejherowskie" value="6593" >Gościcino Wejherowskie</option>
+                                                    <option  data-keywords="kartuzy" value="18002" >KARTUZY</option>
+                                                    <option  data-keywords="kielpino,kart." value="17798" >Kiełpino Kart.</option>
+                                                    <option  data-keywords="koscierzyna" value="17509" >KOŚCIERZYNA</option>
+                                                    <option  data-keywords="krzeszna" value="17756" >Krzeszna</option>
+                                                    <option  data-keywords="leszno,kartuskie" value="18036" >Leszno Kartuskie</option>
+                                                    <option  data-keywords="lebork" value="5256" >LĘBORK</option>
+                                                    <option  data-keywords="lebork,mosty" value="254531" >Lębork Mosty</option>
+                                                    <option  data-keywords="luzino" value="5447" >Luzino</option>
+                                                    <option  data-keywords="pepowo,kartuskie" value="17863" >Pępowo Kartuskie</option>
+                                                    <option  data-keywords="reda" value="6106" >REDA</option>
+                                                    <option  data-keywords="reda,pieleszewo" value="6114" >Reda Pieleszewo</option>
+                                                    <option  data-keywords="rebiechowo" value="17871" >Rębiechowo</option>
+                                                    <option  data-keywords="rumia" value="6098" >RUMIA</option>
+                                                    <option  data-keywords="rumia,janowo" value="6080" >Rumia Janowo</option>
+                                                    <option  data-keywords="skorzewo" value="17731" >Skorzewo</option>
+                                                    <option  data-keywords="slawki" value="17772" >Sławki</option>
+                                                    <option  data-keywords="somonino" value="17780" >SOMONINO</option>
+                                                    <option  data-keywords="sopot" value="5942" >SOPOT</option>
+                                                    <option  data-keywords="sopot,kamienny,potok" value="5959" >Sopot Kamienny Potok</option>
+                                                    <option  data-keywords="sopot,wyscigi" value="5967" >Sopot Wyścigi</option>
+                                                    <option  data-keywords="strzebielino,morskie" value="5439" >Strzebielino Morskie</option>
+                                                    <option  data-keywords="wejherowo" value="6304" >WEJHEROWO</option>
+                                                    <option  data-keywords="wejherowo,nanice" value="6320" >Wejherowo Nanice</option>
+                                                    <option  data-keywords="wejherowo,smiechowo" value="6312" >Wejherowo Śmiechowo</option>
+                                                    <option  data-keywords="wiezyca" value="17764" >Wieżyca</option>
+                                                    <option  data-keywords="zukowo" value="257551" >Żukowo</option>
+                                                    <option  data-keywords="zukowo,wsch." value="17855" >Żukowo Wsch.</option>
+                                            </select>
+            </div>  
+        </div>
+        <div class="row">
+             <div class="left"></div>
+              <div class="right">
+                <input id="detailed_search_type" type="checkbox" name="type" value="1" /> - <label for="detailed_search_type">tylko połącznia bezpośrednie</label> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="left"></div>
+            <div class="right">
+                <span class="block">Minimalny czas na przesiadkę</span> 
+                <input type="text" name="time_min" value="" class="short"> min
+            </div>
+        </div>
+        <div class="row">
+            <div class="left"></div>
+            <div class="right">
+                <span class="block">Maksymalny czas na przesiadkę</span> 
+                <input type="text" name="time_max" value="" class="short"> min
+            </div>
+        </div>
+        <div class="row details-link-row_2">
+            <div class="left"></div>
+            <div class="right">
+                <a id="skm_detailed_search_link_simple" href="javascript:void(0);" class="simple">wyszukiwanie proste</a>
+            </div>
+
+        
+        <input class="skm_search_button" type="button" value="Szukaj">
+    </div>
+    </div>
+   
+
+
+    </form>
+</div>
+
+<script>
+    $(document).ready(function() {
+
+        $('.chzn-select').chosen({width:'100%',no_results_text: "Nie znaleziono stacji"});
+
+        $('.change_stations img').click(function(){
+
+            var old_station = $('#stacja_od').val();
+            $('#stacja_od').val($('#stacja_do').val());
+            $('#stacja_do').val(old_station);
+
+            $("#stacja_od").trigger("chosen:updated");
+            $("#stacja_do").trigger("chosen:updated");
+
+        });
+
+        $('#hour1').click(function(){
+            $(this).prop('readonly', false);
+        });
+
+        $('.skm_search_button').click(function(){
+            if(!$('#stacja_do').val())
+            {
+                $('#stacja_do').after('<div style="color:red;">wybierz stację docelową</div>');
+            }
+            else
+            {
+                $("#hour1[readonly]").attr("disabled", true);
+                $('#skm_search_form').submit();
+            }
+        });
+
+    });
+</script>
+
+
+                
+                        <div class="timetable-main">
+    <!-- <img src="https://s-trojmiasto.pl/_img/komunikacja/gray_bg.jpg" class="print bg"/> -->
+    <div class="left">
+                <h3><span class="print">Ze stacji </span> GDAŃSK WRZESZCZ</h3>
+                <h4><span class="print">Do stacji </span> Gdańsk Port Lotniczy</h4>
+        <p><span class="print">Data odjazdu:</span> 24 lipca 2022</p>
+    </div>
+            <div class="clear"></div>
+</div>
+
+<div class="all-day-wrap">
+    <a id="show_all_timetable" href="javascript:void(0);">pokaż cały dzień</a>
+                        <a href="https://skm.trojmiasto.pl/rozklad/?view=table&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03&via1=0&via2=0&time_min=0&time_max=0" class="show_timetable show_grid">widok: tabela</a>
+                <a href="javascript:void(0);" onclick="window.print()" class="print-link">drukuj</a>
+</div>
+
+            
+                                                <span class="info-text left"  style="display:none;"><a id="url_prev_day" href="https://skm.trojmiasto.pl/rozklad/?from=7534&to=257530&date_mode=1&date=2022-07-23&hour=21:00&via1=0&via2=0&time_min=0&time_max=0" >pokaż rozkład na poprzedni dzień</a></span>
+                <div class="clear"></div>
+
+
+                                  <div class="earlier-wrap">
+                    <a id="show_prev" href="javascript:void(0);">wcześniejsze połączenia</a>
+                  </div>
+                                
+                <style>
+                    .timetable-hidden{display:none;}
+                </style>
+                
+
+
+                
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_1">
+                        
+                        <div class="left">
+                            <h3>05:24</h3>
+                                                                                                                        <p class="line-symbol" title="Kościerzyna <-> Gdańsk Port Lotniczy <-> Gdańsk Wrzeszcz <-> Sopot <-> Gdynia Główna ">S9</p>                                                        <p>peron: <b>I</b>, tor: <b>4</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>05:47</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235176&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235176&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_2">
+                        
+                        <div class="left">
+                            <h3>05:55</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>06:19</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_3">
+                        
+                        <div class="left">
+                            <h3>06:27</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>06:51</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_4">
+                        
+                        <div class="left">
+                            <h3>06:38</h3>
+                                                                                                                        <p class="line-symbol" title="Kościerzyna <-> Gdańsk Port Lotniczy <-> Gdańsk Wrzeszcz <-> Sopot <-> Gdynia Główna ">S9</p>                                                        <p>peron: <b>I</b>, tor: <b>4</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>07:01</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235180&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235180&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_5">
+                        
+                        <div class="left">
+                            <h3>07:20</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>23 min</b></p>
+                             <p>przyjazd o: <b>07:43</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_6">
+                        
+                        <div class="left">
+                            <h3>07:43</h3>
+                                                                                                                        <p class="line-symbol" title="Kościerzyna <-> Gdańsk Port Lotniczy <-> Gdańsk Wrzeszcz <-> Sopot <-> Gdynia Główna ">S9</p>                                                        <p>peron: <b>I</b>, tor: <b>4</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>08:06</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235169&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235169&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_7">
+                        
+                        <div class="left">
+                            <h3>08:14</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>08:38</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_8">
+                        
+                        <div class="left">
+                            <h3>08:48</h3>
+                                                                                                                                                                                <p>peron: <b>II</b>, tor: <b>3</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>09:11</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235179&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235179&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_9">
+                        
+                        <div class="left">
+                            <h3>08:55</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>09:19</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_10">
+                        
+                        <div class="left">
+                            <h3>09:20</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>09:44</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_11">
+                        
+                        <div class="left">
+                            <h3>09:53</h3>
+                                                                                                                                                                                <p>peron: <b>I</b>, tor: <b>4</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>10:16</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235170&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235170&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_12">
+                        
+                        <div class="left">
+                            <h3>10:28</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>10:52</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_13">
+                        
+                        <div class="left">
+                            <h3>10:56</h3>
+                                                                                                                                                                                <p>peron: <b>I</b>, tor: <b>4</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>11:19</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235173&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235173&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_14">
+                        
+                        <div class="left">
+                            <h3>11:11</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>11:35</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_15">
+                        
+                        <div class="left">
+                            <h3>11:50</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>12:14</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_16">
+                        
+                        <div class="left">
+                            <h3>12:05</h3>
+                                                                                                                                                                                <p>peron: <b>II</b>, tor: <b>3</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>23 min</b></p>
+                             <p>przyjazd o: <b>12:28</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235178&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235178&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_17">
+                        
+                        <div class="left">
+                            <h3>12:45</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>13:09</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_18">
+                        
+                        <div class="left">
+                            <h3>13:10</h3>
+                                                                                                                                                                                <p>peron: <b>II</b>, tor: <b>3</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>23 min</b></p>
+                             <p>przyjazd o: <b>13:33</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235177&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235177&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_19">
+                        
+                        <div class="left">
+                            <h3>13:40</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>14:04</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_20">
+                        
+                        <div class="left">
+                            <h3>14:12</h3>
+                                                                                                                                                                                <p>peron: <b>I</b>, tor: <b>4</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>23 min</b></p>
+                             <p>przyjazd o: <b>14:35</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235175&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235175&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                                   <a target="_blank" href="https://skm.trojmiasto.pl/kup_bilet/?data=eyJjb25uZWN0aW9uIjpbeyJkZXBhcnR1cmUiOiIyMDIyLTA3LTI0IDE0OjEyIiwiYXJyaXZhbCI6IjIwMjItMDctMjQgMTQ6MzUiLCJmcm9tX2libnIiOjUxNjIsInRvX2libnIiOjUxNTd9XX0=" class="btn-buy-ticket">Kup bilet</a>
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_21">
+                        
+                        <div class="left">
+                            <h3>14:55</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>29 min</b></p>
+                             <p>przyjazd o: <b>15:24</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_22">
+                        
+                        <div class="left">
+                            <h3>15:12</h3>
+                                                                                                                                                                                <p>peron: <b>II</b>, tor: <b>3</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>23 min</b></p>
+                             <p>przyjazd o: <b>15:35</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235183&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235183&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                                   <a target="_blank" href="https://skm.trojmiasto.pl/kup_bilet/?data=eyJjb25uZWN0aW9uIjpbeyJkZXBhcnR1cmUiOiIyMDIyLTA3LTI0IDE1OjEyIiwiYXJyaXZhbCI6IjIwMjItMDctMjQgMTU6MzUiLCJmcm9tX2libnIiOjUxNjIsInRvX2libnIiOjUxNTd9XX0=" class="btn-buy-ticket">Kup bilet</a>
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_23">
+                        
+                        <div class="left">
+                            <h3>15:55</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>16:19</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_24">
+                        
+                        <div class="left">
+                            <h3>16:24</h3>
+                                                                                                                        <p class="line-symbol" title="Kościerzyna <-> Gdańsk Port Lotniczy <-> Gdańsk Wrzeszcz <-> Sopot <-> Gdynia Główna ">S9</p>                                                        <p>peron: <b>I</b>, tor: <b>4</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>23 min</b></p>
+                             <p>przyjazd o: <b>16:47</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235182&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235182&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                                   <a target="_blank" href="https://skm.trojmiasto.pl/kup_bilet/?data=eyJjb25uZWN0aW9uIjpbeyJkZXBhcnR1cmUiOiIyMDIyLTA3LTI0IDE2OjI0IiwiYXJyaXZhbCI6IjIwMjItMDctMjQgMTY6NDciLCJmcm9tX2libnIiOjUxNjIsInRvX2libnIiOjUxNTd9XX0=" class="btn-buy-ticket">Kup bilet</a>
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_25">
+                        
+                        <div class="left">
+                            <h3>16:52</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>17:16</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_26">
+                        
+                        <div class="left">
+                            <h3>17:28</h3>
+                                                                                                                                                                                <p>peron: <b>I</b>, tor: <b>4</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>17:51</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235184&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235184&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                                   <a target="_blank" href="https://skm.trojmiasto.pl/kup_bilet/?data=eyJjb25uZWN0aW9uIjpbeyJkZXBhcnR1cmUiOiIyMDIyLTA3LTI0IDE3OjI4IiwiYXJyaXZhbCI6IjIwMjItMDctMjQgMTc6NTEiLCJmcm9tX2libnIiOjUxNjIsInRvX2libnIiOjUxNTd9XX0=" class="btn-buy-ticket">Kup bilet</a>
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_27">
+                        
+                        <div class="left">
+                            <h3>17:45</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>29 min</b></p>
+                             <p>przyjazd o: <b>18:14</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_28">
+                        
+                        <div class="left">
+                            <h3>18:34</h3>
+                                                                                                                                                                                <p>peron: <b>I</b>, tor: <b>4</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>23 min</b></p>
+                             <p>przyjazd o: <b>18:57</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235171&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235171&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                                   <a target="_blank" href="https://skm.trojmiasto.pl/kup_bilet/?data=eyJjb25uZWN0aW9uIjpbeyJkZXBhcnR1cmUiOiIyMDIyLTA3LTI0IDE4OjM0IiwiYXJyaXZhbCI6IjIwMjItMDctMjQgMTg6NTciLCJmcm9tX2libnIiOjUxNjIsInRvX2libnIiOjUxNTd9XX0=" class="btn-buy-ticket">Kup bilet</a>
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_29">
+                        
+                        <div class="left">
+                            <h3>19:05</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>19:29</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_30">
+                        
+                        <div class="left">
+                            <h3>19:39</h3>
+                                                                                                                                                                                <p>peron: <b>II</b>, tor: <b>3</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>23 min</b></p>
+                             <p>przyjazd o: <b>20:02</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235172&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235172&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                                   <a target="_blank" href="https://skm.trojmiasto.pl/kup_bilet/?data=eyJjb25uZWN0aW9uIjpbeyJkZXBhcnR1cmUiOiIyMDIyLTA3LTI0IDE5OjM5IiwiYXJyaXZhbCI6IjIwMjItMDctMjQgMjA6MDIiLCJmcm9tX2libnIiOjUxNjIsInRvX2libnIiOjUxNTd9XX0=" class="btn-buy-ticket">Kup bilet</a>
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_31">
+                        
+                        <div class="left">
+                            <h3>20:25</h3>
+                                                                                                                        <p class="line-symbol" title="Kościerzyna <-> Gdańsk Port Lotniczy <-> Gdańsk Wrzeszcz <-> Sopot <-> Gdynia Główna ">S9</p>                                                        <p>peron: <b>I</b>, tor: <b>4</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>20:48</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235174&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235174&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                                   <a target="_blank" href="https://skm.trojmiasto.pl/kup_bilet/?data=eyJjb25uZWN0aW9uIjpbeyJkZXBhcnR1cmUiOiIyMDIyLTA3LTI0IDIwOjI1IiwiYXJyaXZhbCI6IjIwMjItMDctMjQgMjA6NDgiLCJmcm9tX2libnIiOjUxNjIsInRvX2libnIiOjUxNTd9XX0=" class="btn-buy-ticket">Kup bilet</a>
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_32">
+                        
+                        <div class="left">
+                            <h3>20:35</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>20:59</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_33">
+                        
+                        <div class="left">
+                            <h3>20:58</h3>
+                                                                                                                        <p class="line-symbol" title="Kościerzyna <-> Gdańsk Port Lotniczy <-> Gdańsk Wrzeszcz <-> Sopot <-> Gdynia Główna ">S9</p>                                                        <p>peron: <b>I</b>, tor: <b>4</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>23 min</b></p>
+                             <p>przyjazd o: <b>21:21</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235185&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235185&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                                   <a target="_blank" href="https://skm.trojmiasto.pl/kup_bilet/?data=eyJjb25uZWN0aW9uIjpbeyJkZXBhcnR1cmUiOiIyMDIyLTA3LTI0IDIwOjU4IiwiYXJyaXZhbCI6IjIwMjItMDctMjQgMjE6MjEiLCJmcm9tX2libnIiOjUxNjIsInRvX2libnIiOjUxNTd9XX0=" class="btn-buy-ticket">Kup bilet</a>
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_34">
+                        
+                        <div class="left">
+                            <h3>21:16</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>23 min</b></p>
+                             <p>przyjazd o: <b>21:39</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_35">
+                        
+                        <div class="left">
+                            <h3>21:34</h3>
+                                                                                                                        <p class="line-symbol" title="Kościerzyna <-> Gdańsk Port Lotniczy <-> Gdańsk Wrzeszcz <-> Sopot <-> Gdynia Główna ">S9</p>                                                        <p>peron: <b>I</b>, tor: <b>4</b></p>                        </div>
+                        <div class="right">
+                             <p>czas podróży: <b>24 min</b></p>
+                             <p>przyjazd o: <b>21:58</b> </p>
+                             <p>odległość: <b>15 km</b></p>                             <div class="full-route">
+
+                                                                      <a href="https://skm.trojmiasto.pl/trasa/?id_search=235181&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#route">trasa przejazdu</a>
+                                     <a href="https://skm.trojmiasto.pl/trasa/?id_search=235181&from=7534&to=257530&date_mode=1&date=2022-07-24&hour=23:03#price">ceny biletów</a>
+                                 
+                                                                   <a target="_blank" href="https://skm.trojmiasto.pl/kup_bilet/?data=eyJjb25uZWN0aW9uIjpbeyJkZXBhcnR1cmUiOiIyMDIyLTA3LTI0IDIxOjM0IiwiYXJyaXZhbCI6IjIwMjItMDctMjQgMjE6NTgiLCJmcm9tX2libnIiOjUxNjIsInRvX2libnIiOjUxNTd9XX0=" class="btn-buy-ticket">Kup bilet</a>
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                    <div class="timetable timetable2 timetable-hidden" id="timetable_box_36">
+                        
+                        <div class="left">
+                            <h3>22:26</h3>
+                                                                                                                        <p class="line-symbol" title="">Polregio</p>                                                                                </div>
+                        <div class="right">
+                             <p>czas podróży: <b>23 min</b></p>
+                             <p>przyjazd o: <b>22:49</b> </p>
+                                                          <div class="full-route">
+
+                                                                      <p style="margin-top:15px;">Kurs obsługiwany przez <a target="_blank" href="https://www.polregio.pl">Polregio</a></p>
+                                 
+                                                             </div>
+                                                         
+                            <div class="change-trains" style="display:none">
+                              
+
+                              <!-- <a href="">Zobacz trasę przejazdu <span>&raquo;</span></a> -->
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                        <!-- opóźnienie: 0 <br /> -->
+
+                    </div>
+                
+                                    <div class="timetable-shown"></div>
+                
+
+                                      <span class="info-text">Nie znaleziono połączeń dla wybranych kryteriów</span>
+                
+                
+                                <span class="info-text right" ><a id="url_next_day" href="https://skm.trojmiasto.pl/rozklad/?from=7534&to=257530&date_mode=1&date=2022-07-25&hour=00:00&via1=0&via2=0&time_min=0&time_max=0" >pokaż rozkład na kolejny dzień</a></span>
+                <div class="clear"></div>
+
+
+            
+                        <div class="legend">
+    <h3 class="legend__title">Legenda</h3>
+    <ul class="legend__list">
+                    <li class="legend__item">
+            	<span class="line-symbol icon-p">P</span>
+            	<span class="legend__label">Przesiadka</span>
+            </li>
+                            <li class="legend__item">
+            	<span class="line-symbol">S1</span>
+            	<span class="legend__label">Lębork <-> Wejherowo <-> Rumia <-> Gdynia Główna</span>
+            </li>
+                    <li class="legend__item">
+            	<span class="line-symbol">S11</span>
+            	<span class="legend__label">Kartuzy <-> Gdańsk Port Lotniczy <-> Gdańsk Wrzeszcz <-> Gdynia Główna</span>
+            </li>
+                    <li class="legend__item">
+            	<span class="line-symbol">S2</span>
+            	<span class="legend__label">Gdańsk Wrzeszcz <-> Gdańsk Port Lotniczy <-> Gdańsk Osowa <-> Gdynia Główna</span>
+            </li>
+                    <li class="legend__item">
+            	<span class="line-symbol">S8</span>
+            	<span class="legend__label">Kościerzyna <-> Gdańsk Osowa <-> Gdynia Główna</span>
+            </li>
+                    <li class="legend__item">
+            	<span class="line-symbol">S9</span>
+            	<span class="legend__label">Kościerzyna <-> Gdańsk Port Lotniczy <-> Gdańsk Wrzeszcz <-> Sopot <-> Gdynia Główna </span>
+            </li>
+            </ul>
+
+</div>
+
+                <br/>
+        <br/>
+                <div class="info-box-white no-print">
+	<strong>Wszelkie uwagi dotyczące rozkładów jazdy prosimy kierować do <a href="mailto:skm@skm.pkp.pl">skm@skm.pkp.pl</a></strong>
+	<br />Uwagi dotyczące działania internetowych stron rozkładu prosimy kierować do <a href="mailto:skm&#64;&#116;&#114;&#111;&#106;&#109;&#105;&#97;&#115;&#116;&#111;&#46;&#112;&#108;">skm&#64;&#116;&#114;&#111;&#106;&#109;&#105;&#97;&#115;&#116;&#111;&#46;&#112;&#108;</a>
+</div>    
+
+    </div>
+    <div class="section-short no-print">
+        
+    
+
+        
+          
+                    <div class="boxm means-communication">
+		<div class="boxbody">
+		
+
+<div class="cF transport-types transport-types--raport">
+    <div class="transport-types__item">
+        <a href="//ztm.trojmiasto.pl/">
+            <span class="trm trm-bus"></span>
+            <span class="trm trm-tram"></span>
+            <h2 class="transport-types__name">ZTM Gdańsk</h2>
+            <h3 class="transport-types__course">Gdańsk i Sopot</h3>
+        </a>
+    </div>
+    <div class="transport-types__item">
+        <a href="//zkmgdynia.trojmiasto.pl/">
+            <span class="trm trm-bus"></span>
+            <span class="trm trm-trolley"></span>
+            <h2 class="transport-types__name">ZKM Gdynia</h2>
+            <h3 class="transport-types__course">Gdynia i Sopot</h3>
+        </a>
+    </div>
+    <div class="transport-types__item">
+        <a href="//skm.trojmiasto.pl/">
+            <span class="trm trm-skm"></span>
+            <h2 class="transport-types__name">SKM</h2>
+            <h3 class="transport-types__course">Gdańsk - Sopot - Gdynia</h3>
+        </a>
+    </div>
+    <div class="transport-types__item">
+        <a href="//skm.trojmiasto.pl/#pkm">
+            <span class="trm trm-pkm"></span>
+            <h2 class="transport-types__name">PKM</h2>
+            <h3 class="transport-types__course">Gdynia - Gdańsk Port Lotniczy - Gdańsk Wrzeszcz</h3>
+        </a>
+    </div>
+
+            <div class="transport-types__item">
+            <a href="//komunikacja.trojmiasto.pl/lotnisko/">
+                <span class="trm trm-airplane"></span>
+                <h2 class="transport-types__name">Lotnisko</h2>
+                <h3 class="transport-types__course">Przyloty - Odloty</h3>
+            </a>
+        </div>
+
+        
+        <div class="transport-types__item ">
+            <a href="//komunikacja.trojmiasto.pl/tramwaj_wodny/">
+                <span class="trm trm-water"></span>
+                <h2 class="transport-types__name">Tramwaje wodne</h2>
+                <h3 class="transport-types__course">Gdańsk - Sopot - Hel - Gdynia</h3>
+            </a>
+        </div>
+    </div>
+
+	</div>
+</div>            <div class="banner banner-f2--komunikacja"><ins data-revive-zoneid="841" data-revive-block="1"
+     data-revive-id="3d1e790fba67c63e0197bd8341256420"></ins>
+<script async src="https://r.trojmiasto.pl/www/delivery/asyncjs.php"></script>
+</div>
+        
+            <div class="box">
+        <h3 class="box__title">Wiadomości - komunikacja</h3>
+        <ul class="news-list">
+                            <li class="news-list__item">
+                	<a href="https://www.trojmiasto.pl/wiadomosci/Gdynia-przetestuje-tymczasowe-buspasy-tylko-w-godzinach-szczytu-n169053.html" class="news-list__img">
+                        <img src="https://s-trojmiasto.pl/zdj/c/n/2/3225/130x90/3225159-Gdynia-przetestuje-tymczasowe-buspasy-tylko-w-godzinach-szczytu__kr.jpg" alt="Gdynia przetestuje tymczasowe buspasy tylko w godzinach szczytu">
+                    </a>
+                    <div class="news-list__content">
+                        <a href="https://www.trojmiasto.pl/wiadomosci/Gdynia-przetestuje-tymczasowe-buspasy-tylko-w-godzinach-szczytu-n169053.html" title="Gdynia przetestuje tymczasowe buspasy tylko w godzinach szczytu" class="news-list__title">
+                            Gdynia przetestuje tymczasowe buspasy tylko w...
+                            
+                
+                
+                
+                                                                                                
+                            
+    
+    
+                                </a>
+                        <a class="news-list__opinions" href="https://www.trojmiasto.pl/wiadomosci/Gdynia-przetestuje-tymczasowe-buspasy-tylko-w-godzinach-szczytu-n169053.html#opinie"><strong>(241</strong> opinii)</a>                    </div>
+                </li>
+                            <li class="news-list__item">
+                	<a href="https://www.trojmiasto.pl/wiadomosci/814-pojazdow-komunikacji-miejskiej-Ile-z-nich-ma-klimatyzacje-n168951.html" class="news-list__img">
+                        <img src="https://s-trojmiasto.pl/zdj/c/n/2/3222/130x90/3222374-800-pojazdow-komunikacji-w-Trojmiescie-Ile-ma-klimatyzacje__kr.jpg" alt="800 pojazdów komunikacji w Trójmieście. Ile ma klimatyzację?">
+                    </a>
+                    <div class="news-list__content">
+                        <a href="https://www.trojmiasto.pl/wiadomosci/814-pojazdow-komunikacji-miejskiej-Ile-z-nich-ma-klimatyzacje-n168951.html" title="800 pojazdów komunikacji w Trójmieście. Ile ma klimatyzację?" class="news-list__title">
+                            800 pojazdów komunikacji w Trójmieście. Ile ma...
+                            
+                
+                
+                
+                                                                                                
+                            
+    
+    
+                                </a>
+                        <a class="news-list__opinions" href="https://www.trojmiasto.pl/wiadomosci/814-pojazdow-komunikacji-miejskiej-Ile-z-nich-ma-klimatyzacje-n168951.html#opinie"><strong>(156</strong> opinii)</a>                    </div>
+                </li>
+                            <li class="news-list__item">
+                	<a href="https://www.trojmiasto.pl/wiadomosci/Rusza-remont-na-stacji-SKM-Gdynia-Glowna-n168985.html" class="news-list__img">
+                        <img src="https://s-trojmiasto.pl/zdj/c/n/2/3223/130x90/3223768-Rusza-remont-na-stacji-SKM-Gdynia-Glowna__kr.jpg" alt="Rusza remont na stacji SKM Gdynia Główna">
+                    </a>
+                    <div class="news-list__content">
+                        <a href="https://www.trojmiasto.pl/wiadomosci/Rusza-remont-na-stacji-SKM-Gdynia-Glowna-n168985.html" title="Rusza remont na stacji SKM Gdynia Główna" class="news-list__title">
+                            Rusza remont na stacji SKM Gdynia Główna
+                            
+                
+                
+                
+                                                                                                
+                            
+    
+    
+                                </a>
+                        <a class="news-list__opinions" href="https://www.trojmiasto.pl/wiadomosci/Rusza-remont-na-stacji-SKM-Gdynia-Glowna-n168985.html#opinie"><strong>(130</strong> opinii)</a>                    </div>
+                </li>
+                    </ul>
+            </div>
+
+                <div class="boxm">
+                    </div>
+
+        
+        <div class="box-wrap quizBox quizBox--komunikacja" data-name="category" data-category="10">
+    <h3 class='title'>Sprawdź się</h3>    <div class="quizBox__wrapper">
+
+        
+        <div id="quiz_box_cont">
+                <div id="quiz_box_652" class="quizBoxContent">
+        <p class="quizBoxContent__question">Jak potocznie nazywa się przyczepa pasażerska do autobusu Jelcz 043?</p>
+                    <p class="quizBoxContent__badAnswer">
+                <span class="messageAlert"></span>&nbsp;            </p>
+
+            <form id="quiz_form_652" name="quiz_form_652" >
+                <input type="hidden" name="id" value="652" disabled="disabled" />
+                <input type="hidden" id="category" name="category" data-name="category" data-category="10" value="10" />
+                                    <input type="hidden" id="ajax_url" name="ajax_url" value="/_ajax/quiz__quiz_sprawdzodpowiedz/"/>
+                                                    <div>
+                        <input type="radio" name="answer" id="ans2086" value="2086" />
+                        <label for="ans2086">ogórek</label>
+                    </div>
+                                    <div>
+                        <input type="radio" name="answer" id="ans2087" value="2087" />
+                        <label for="ans2087">korniszonek</label>
+                    </div>
+                                    <div>
+                        <input type="radio" name="answer" id="ans2088" value="2088" />
+                        <label for="ans2088">pomidorek</label>
+                    </div>
+                            </form>
+            </div>
+
+        </div>
+
+        <div id="quiz_results" class="quiz-box" style="display:none;">
+            <strong id="score_comment"></strong>
+            <div>
+                <p>Liczba pytań na które odpowiedziałeś : <span id="questions_number">0</span></p>
+                <p>Poprawnych odpowiedzi : <span id="correct_answers" class="correct_answers">0</span></p>
+                <p>Błędnych odpowiedzi : <span id="wrong_answers"  class="wrong_answers">0</span></p>
+            </div>
+        </div>
+
+        <div class="quizButtons">
+            <div class="">
+                <div id="show_quiz_results" class="more-wrap" style="display:none;">
+                    <a href="#" class="more more--small" onclick='return false;' id='show_quiz_results_link'>statystyki odpowiedzi</a>
+                </div>
+            </div>
+            <div id="quiz_buttons">
+                                    <input id="quiz_submit" type="submit" value="Sprawdź" class="quizButtons__submit" />
+                    <div id="next_button_container" class="more-wrap next-question" style="display:none;">
+                        <a href="#" class="more more--small" onclick='return false;' id='next_quiz_' >następne pytanie</a>
+                    </div>
+                            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+    var isFirstClick = true;
+
+    $(document).ready(function() {
+        $("#quiz_submit").click(function(event) {
+            event.preventDefault();
+            handlerSubmit_quiz($("[name^='quiz_form_']"), true, isFirstClick);
+            isFirstClick = false;
+        });
+    });
+
+    $("#quiz_all, #quiz_primary, #quiz_high").on('click', function() {
+
+        $("[data-name='category']").attr("data-category", $(this).attr("data-category")),
+
+        $.ajax({
+            type: 'post',
+            url: '/_ajax/quiz__quiz_sprawdzodpowiedz/',
+            data: {
+                random: 1,
+                category: $(this).attr("data-category")
+            },
+            success: function(data, textStatus, jqXHR) {
+                isFirstClick = true;
+                $("[id^='quiz_box_']").html(jqXHR.responseText);
+                $("[name^='quiz_form_']").bind("submit", function(event) {
+                    event.preventDefault();
+                    handlerSubmit_quiz($(this), false, false);
+                });
+                $(this).attr("checked", "checked");
+            },
+            complete : function(jqXHR, textStatus) {
+                if (textStatus === "success"){
+                    //sprawdza czy odpowiedz xhr zawiera p z prawidolowa odpowiedzia
+                    if ($(jqXHR.responseText).children('p.answer').length > 0) {
+                        $('#quiz_submit').hide();
+                        $('#next_button_container').show();
+                    } else {
+                        $('#quiz_submit').show();
+                        $('#next_button_container').hide();
+                    }
+                }
+            },
+            async: false
+        }).responseText;
+
+    });
+
+    $("[id^='next_quiz_']").on('click', function(e) {
+        e.preventDefault();
+
+        $.ajax({
+            type: "POST",
+            url: '/_ajax/quiz__quiz_sprawdzodpowiedz/',
+            data: {
+                random: 1,
+                category: $("[data-name='category']").attr("data-category"),
+            },
+            success: function(data, textStatus, jqXHR) {
+                isFirstClick = true;
+                $("[id^='quiz_box_']").html(jqXHR.responseText);
+                $("[name^='quiz_form_']").bind("submit", function(event) {
+                    event.preventDefault();
+                    handlerSubmit_quiz($(this), false, false);
+                });
+            },
+            complete : function(jqXHR, textStatus) {
+                if (textStatus === "success"){
+                    //sprawdza czy odpowiedz xhr zawiera p z prawidolowa odpowiedzia
+                    if ($(jqXHR.responseText).children('p.answer').length > 0) {
+                        $('#quiz_submit').hide();
+                        $('#next_button_container').show();
+                    } else {
+                        $('#quiz_submit').show();
+                        $('#next_button_container').hide();
+                    }
+                }
+            },
+            async: false
+        }).responseText;
+
+        $("#quiz_submit").show();
+    });
+
+    var clickflagLink = 0;
+    $('#show_quiz_results_link').on('click', function() {
+
+        if(clickflagLink == 0){
+            $("[id^='quiz_box_']").hide();
+            $("#quiz_buttons").hide();
+            $("#quiz_results").show();
+            $("#show_quiz_results_link").html("&laquo; wróć do quizu").addClass("back");
+            clickflagLink = 1;
+        }
+        else
+        {
+            $("[id^='quiz_box_']").show();
+            $("#quiz_buttons").show();
+            $("#quiz_results").hide();
+            $("#show_quiz_results_link").html("statystyki odpowiedzi").removeClass("back");
+            clickflagLink = 0;
+        }
+
+    });
+</script>
+
+        
+        
+
+
+<div class="box-wrap tv-box-wrap cF big-slider"  id="tv_box_content_1">
+        <h3 class="title">
+        <a href="https://tv.trojmiasto.pl/" title="więcej filmów w serwisie TV">
+            <img src="https://s-trojmiasto.pl/build/assets/svg/tv.svg" alt="TV"> Filmy
+        </a>
+    </h3>
+    
+    <div class="Vlist-wrapper cF"><ul class="Vlist cF">
+<li class="fL">
+    <a class="videoLink videoPreviewWrap" href="https://tv.trojmiasto.pl/Zwezenie-na-obwodnicy-22-07-2022-video-74066.html?id_serwisy=27" title="Zwężenie na obwodnicy">
+                    <video class="video lazy videoPreview" muted="muted" preload="none" poster="https://s-trojmiasto.pl/zdj/c/n/13/3226/330x185/3226927-Zwezenie-na-obwodnicy__kr.jpg" loop width="330" height="185" style="width:330px;height:185px;"><source src="https://v.s-trojmiasto.pl/flv/740/74066/d8b17fb4-aace-5344-8b99-505db330a0e0.preview.mp4" type="video/mp4"></video>
+                <span class="desc-wrap">
+            <span class="trm trm-tv-play"></span>
+            <span class="desc-wrap__title">Zwężenie na obwodnicy</span>
+        </span>
+    </a>
+</li>
+<li class="fL">
+    <a class="videoLink videoPreviewWrap" href="https://tv.trojmiasto.pl/Zwezenie-do-jednego-pasa-korkuje-obwodnice-Gdynia-19-07-2022-video-73956.html?id_serwisy=27" title="Zwężenie do jednego pasa korkuje obwodnicę">
+                    <video class="video lazy videoPreview" muted="muted" preload="none" poster="https://s-trojmiasto.pl/zdj/c/n/13/3226/330x185/3226034-Zwezenie-do-jednego-pasa-korkuje-obwodnice__kr.jpg" loop width="330" height="185" style="width:330px;height:185px;"><source src="https://v.s-trojmiasto.pl/flv/739/73956/75de489d-f016-5554-a997-b08ced08f128.preview.mp4" type="video/mp4"></video>
+                <span class="desc-wrap">
+            <span class="trm trm-tv-play"></span>
+            <span class="desc-wrap__title">Zwężenie do jednego pasa korkuje obwodnicę</span>
+        </span>
+    </a>
+</li>
+<li class="fL">
+    <a class="videoLink videoPreviewWrap" href="https://tv.trojmiasto.pl/Ciezarowka-na-obwodnicy-stoi-dalej-18-07-2022-video-73909.html?id_serwisy=27" title="Ciężarówka na obwodnicy stoi dalej">
+                    <video class="video lazy videoPreview" muted="muted" preload="none" poster="https://s-trojmiasto.pl/zdj/c/n/13/3224/330x185/3224364-Ciezarowka-na-obwodnicy-stoi-dalej__kr.jpg" loop width="330" height="185" style="width:330px;height:185px;"><source src="https://v.s-trojmiasto.pl/flv/739/73909/3d137802-4560-5ae0-8aae-f2ddc2461a92.preview.mp4" type="video/mp4"></video>
+                <span class="desc-wrap">
+            <span class="trm trm-tv-play"></span>
+            <span class="desc-wrap__title">Ciężarówka na obwodnicy stoi dalej</span>
+        </span>
+    </a>
+</li></ul></div>
+
+</div>
+        
+        <script>
+            if(typeof $.fn.slides == 'undefined') {
+                var scriptObj = document.createElement('script');
+                scriptObj.src = '/_js/vendor/jquery.slides.min.js';
+
+
+                var head = jQuery('head');
+                head.append(scriptObj);
+            }
+
+        $(function(){
+            $('#tv_box_content_1').slides({
+                play: 6000,
+                pause: 6000,
+                container:'Vlist',
+                fadeSpeed: 100,
+                autoHeight: false,
+                hoverPause: true,
+                slideSpeed: 1000,
+                width: 330,
+                height: 185,
+                generatePagination: true
+            });
+        });
+        </script>
+    
+
+            
+
+
+
+
+
+    </div>
+
+</div>
+
+            </div><!-- main-wrap -->
+        </div><!-- main-wrap-outer -->
+    
+                                <div id="footer" class="footer" data-footer="section">
+        <div class="footerWrap">
+
+        
+     
+
+
+        
+
+        
+
+        <ul class="footer__links" data-footer="nav">
+        
+        <li><a href="https://www.trojmiasto.pl/kariera/">Kariera</a></li>
+    <li><a href="https://www.trojmiasto.pl/portal/logo">Logo</a></li>
+        <li><a href="//www.trojmiasto.pl/reklama/">Reklama</a></li>
+    <li><a href="https://www.trojmiasto.pl/portal/polityka_prywatnosci">Polityka prywatności</a></li>
+    <li><a href="https://www.trojmiasto.pl/portal/kontakt">Kontakt</a></li>
+        <li><a href="https://www.trojmiasto.pl/portal/mapa_serwisu">Mapa serwisu</a></li>
+    <li><a href="https://www.trojmiasto.pl/portal/aplikacje">Trojmiasto.pl na komórkę</a></li>
+    <li class="footerLinks__btn"><a href="https://ssl.trojmiasto.pl/">Logowanie</a></li>
+
+        </ul>
+
+        <ul class="footerLinks__apps">
+            <li class="footerLinksApps__label">Zainstaluj aplikację:</li>
+            <li>
+                <span class="footerLinksApps__ico footerLinksApps__ico--android"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="17px" height="19px" viewBox="0 0 434.698 513.337" enable-background="new 0 0 434.698 513.337"
+	 xml:space="preserve">
+<g>
+	<path d="M434.698,199.027c0-18.859-15.342-34.201-34.201-34.201s-34.201,15.342-34.201,34.201v130.82
+		c0,18.859,15.342,34.202,34.201,34.202s34.201-15.343,34.201-34.202V199.027z"/>
+	<path d="M68.402,199.027c0-18.859-15.343-34.201-34.201-34.201S0,180.168,0,199.027v130.82
+		c0,18.859,15.342,34.202,34.201,34.202s34.201-15.343,34.201-34.202V199.027z"/>
+	<path d="M77.294,376.019c0,18.7,15.159,33.859,33.859,33.859h19.666v69.258c0,18.858,15.342,34.201,34.201,34.201
+		c18.859,0,34.201-15.343,34.201-34.201v-69.258h36.254v69.258c0,18.858,15.344,34.201,34.203,34.201
+		c18.857,0,34.201-15.343,34.201-34.201v-69.258h19.665c18.7,0,33.859-15.159,33.859-33.859V170.212H77.294V376.019z"/>
+	<path d="M357.403,162.089c0-47.425-27.669-88.877-68.914-111.374l22.13-39.922c0.94-1.698,1.165-3.661,0.631-5.527
+		c-0.536-1.866-1.766-3.412-3.464-4.353C306.708,0.316,305.494,0,304.272,0c-2.646,0-5.085,1.436-6.366,3.746l-22.532,40.649
+		c-17.68-7.439-37.327-11.587-58.026-11.587c-20.698,0-40.345,4.148-58.024,11.587l-22.532-40.65C135.51,1.436,133.071,0,130.426,0
+		c-1.221,0-2.437,0.316-3.514,0.913c-1.698,0.941-2.927,2.487-3.463,4.353c-0.535,1.866-0.311,3.829,0.63,5.526l22.13,39.923
+		c-41.245,22.497-68.914,63.949-68.914,111.374c0,0.333,0.011,0.665,0.014,0.998c-0.003,0.181-0.014,0.359-0.014,0.541v1.111
+		h280.109v-1.111c0-0.182-0.011-0.36-0.014-0.541C357.393,162.754,357.403,162.423,357.403,162.089z M152.708,107.88
+		c-4.903,0-8.893-3.989-8.893-8.893s3.99-8.893,8.893-8.893s8.893,3.99,8.893,8.893S157.612,107.88,152.708,107.88z M281.989,107.88
+		c-4.903,0-8.893-3.989-8.893-8.893s3.989-8.893,8.893-8.893c4.904,0,8.894,3.99,8.894,8.893S286.894,107.88,281.989,107.88z"/>
+</g>
+</svg>
+</span>
+                <a href="https://play.google.com/store/apps/details?id=pl.trojmiasto.mobile&hl=pl" class="footerLinksAppsIco__label">Android</a>
+            </li>
+            <li>
+                <span class="footerLinksApps__ico footerLinksApps__ico--ios"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="20px" height="16px" viewBox="0 0 416.685 511.743" enable-background="new 0 0 416.685 511.743"
+	 xml:space="preserve">
+<path d="M348.002,271.872c0.719,77.444,67.937,103.216,68.683,103.542c-0.569,1.818-10.74,36.726-35.415,72.784
+	c-21.329,31.175-43.464,62.234-78.337,62.878c-34.266,0.631-45.283-20.318-84.459-20.318c-39.163,0-51.405,19.675-83.84,20.951
+	c-33.66,1.274-59.293-33.71-80.8-64.771C9.889,383.402-23.695,267.405,21.399,189.104c22.402-38.885,62.436-63.508,105.89-64.14
+	c33.052-0.63,64.25,22.238,84.457,22.238c20.196,0,58.107-27.5,97.964-23.462c16.686,0.695,63.521,6.74,93.597,50.762
+	C400.883,176.004,347.422,207.127,348.002,271.872 M283.604,81.707C301.476,60.075,313.502,29.963,310.221,0
+	c-25.758,1.035-56.907,17.166-75.383,38.785c-16.559,19.145-31.061,49.789-27.148,79.157
+	C236.403,120.165,265.733,103.353,283.604,81.707"/>
+</svg>
+</span>
+                <a href="https://itunes.apple.com/pl/app/trojmiasto-pl/id522385310?l=pl&mt=8" class="footerLinksAppsIco__label">iPhone</a>
+            </li>
+        </ul>
+
+        <p class="footer__copyright">
+        &copy; Copyright 1998-2022 Gdańsk, Gdynia, Sopot - Portal Regionalny <strong>trojmiasto.pl</strong>
+        </p>
+
+        
+                <script async src="https://cdn.onthe.io/io.js/JHA7LEdpMYYH"></script>
+
+    
+    
+
+        
+<script>
+    window._io_config = window._io_config || {};
+    window._io_config["0.2.0"] = window._io_config["0.2.0"] || [];
+    window._io_config["0.2.0"].push({
+        page_url: "https://skm.trojmiasto.pl/rozklad/?from=7534&to=257530&date=2022-07-24&hour=23%3A03",
+        page_url_canonical: "https://skm.trojmiasto.pl/rozklad/?from=7534&to=257530&date=2022-07-24&hour=23%3A03",
+        page_title: "Rozkład: GDAŃSK WRZESZCZ - Gdańsk Port Lotniczy - 24 lipca 2022 - Rozkład jazdy kolejki SKM, PKM w Trójmieście",
+        page_type: "default",
+        page_language: "pl",
+            });
+</script>
+    
+    
+
+        </div>
+    </div>
+    
+        
+    
+<script>
+<!--//--><![CDATA[//><!--
+var pp_gemius_identifier = 'zCFLojwu9BayZoaI6NmzTbSn76EWwduwHqYCxJZ0QVX.a7';
+// lines below shouldn't be edited
+function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+(function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+gt.setAttribute('defer','defer'); gt.src=l+'://gapl.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+//--><!]]>
+</script>
+
+
+    
+    
+    
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        
+
+        
+                    
+                            
+                    ga('create', 'UA-1649667-51', 'auto');
+                    ga('send', 'pageview');
+                
+                                
+                            
+                    ga('create', 'UA-29778519-39', 'auto', 'clientTracker_UA2977851939');
+                    ga('clientTracker_UA2977851939.send', 'pageview');
+                
+                                
+                            
+                    ga('create', 'UA-1649667-63', 'auto', 'clientTracker_UA164966763');
+                    ga('clientTracker_UA164966763.send', 'pageview');
+                
+                            
+    </script>
+    
+
+        
+
+
+
+
+
+
+</body>
+</html>
