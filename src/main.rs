@@ -2,6 +2,7 @@ use macroquad::prelude::*;
 use macroquad::ui::root_ui;
 
 mod skm;
+mod ztm;
 
 #[macroquad::main("TrainHelper")]
 async fn main() {
