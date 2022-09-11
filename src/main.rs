@@ -32,6 +32,19 @@ async fn main() {
         Ok(mesg) => format!("Train home {}", mesg),
         Err(err_msg) => err_msg,
     };
+
+    // busses    
+    let to_arena = ztm::ztm::ZTM::new(
+        None,
+        "1752", // ID of bus stop
+        vec![158],
+    )
+    .submit();
+    let to_arena_message = match to_arena {
+        Ok(mesg) => format!("Busses to PARKOUR (GDANSK ZASPA SKM 01 -->):\n {}", mesg),
+        Err(err_msg) => err_msg,
+    };
+
     let mut myskin = root_ui().default_skin().clone();
     myskin.label_style = root_ui().style_builder().font_size(35).build();
     myskin.button_style = root_ui()
@@ -46,6 +59,7 @@ async fn main() {
 
         root_ui().label(None, &to_work_message);
         root_ui().label(None, &home_message);
+        root_ui().label(None, &to_arena_message);
         if root_ui().button(None, "Exit") {
             println!("pushed");
             running = false;
