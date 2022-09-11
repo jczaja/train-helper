@@ -50,7 +50,7 @@ pub mod ztm {
     #[derive(Debug, Deserialize, Serialize)]
     struct Departure {
         id: String,
-        delayInSeconds: Option<u32>,
+        delayInSeconds: Option<i32>,
         estimatedTime: String,
         headsign: String,
         routeId: u32,
