@@ -6,34 +6,45 @@ mod ztm;
 
 #[macroquad::main("TrainHelper")]
 async fn main() {
-    let to_work_message = skm::skm::SKM::new(
+    let messages = skm::skm::SKM::new(
         "https://skm.trojmiasto.pl/".to_string(),
         None,
         vec![
-            "Gdansk Wrzeszcz".to_string(),
-            "Gdansk Port Lotniczy".to_string(),
+            (
+                vec![
+                    "Gdansk Wrzeszcz".to_string(),
+                    "Gdansk Port Lotniczy".to_string(),
+                ],
+                format!("Train to work "),
+            ),
+            (
+                vec![
+                    "Gdansk Port Lotniczy".to_string(),
+                    "Gdansk Wrzeszcz".to_string(),
+                ],
+                format!("Train home from work"),
+            ),
+            (
+                vec!["Gdansk Zaspa".to_string(), "Sopot".to_string()],
+                format!("Train to Sopot "),
+            ),
+            (
+                vec!["Sopot".to_string(), "Gdansk Zaspa".to_string()],
+                format!("Train home from Sopot "),
+            ),
+            (
+                vec!["Gdansk Zaspa".to_string(), "Gdansk Glowny".to_string()],
+                format!("Train to Gdansk "),
+            ),
+            (
+                vec!["Gdansk Glowny".to_string(), "Gdansk Zaspa".to_string()],
+                format!("Train home from Gdansk "),
+            ),
         ],
     )
     .submit();
-    let to_work_message = match to_work_message {
-        Ok(mesg) => format!("Train to work {}", mesg),
-        Err(err_msg) => err_msg,
-    };
-    let home_message = skm::skm::SKM::new(
-        "https://skm.trojmiasto.pl/".to_string(),
-        None,
-        vec![
-            "Gdansk Port Lotniczy".to_string(),
-            "Gdansk Wrzeszcz".to_string(),
-        ],
-    )
-    .submit();
-    let home_message = match home_message {
-        Ok(mesg) => format!("Train home {}", mesg),
-        Err(err_msg) => err_msg,
-    };
 
-    // busses    
+    // busses
     let to_arena = ztm::ztm::ZTM::new(
         None,
         "1752", // ID of bus stop
@@ -41,7 +52,7 @@ async fn main() {
     )
     .submit();
     let to_arena_message = match to_arena {
-        Ok(mesg) => format!("Busses to PARKOUR (GDANSK ZASPA SKM 01 -->):\n {}", mesg),
+        Ok(mesg) => format!("Bus to PARKOUR (GDANSK ZASPA SKM 01 -->):\n {}", mesg),
         Err(err_msg) => err_msg,
     };
 
@@ -54,11 +65,15 @@ async fn main() {
         .build();
     root_ui().push_skin(&myskin);
     let mut running = true;
+    let skm_messages = match messages {
+        Ok(msgs) => msgs,
+        Err(err_msg) => vec![err_msg],
+    };
+
     while running {
         clear_background(WHITE);
 
-        root_ui().label(None, &to_work_message);
-        root_ui().label(None, &home_message);
+        skm_messages.iter().for_each(|x| root_ui().label(None, &x));
         root_ui().label(None, &to_arena_message);
         if root_ui().button(None, "Exit") {
             println!("pushed");
