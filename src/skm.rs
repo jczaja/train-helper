@@ -4,11 +4,15 @@ pub mod skm {
     pub struct SKM {
         skm_url: String,
         proxy: Option<Vec<String>>,
-        from_to: Vec<String>,
+        from_to: Vec<(Vec<String>, String)>,
     }
 
     impl SKM {
-        pub fn new(skm_url: String, proxy: Option<Vec<String>>, from_to: Vec<String>) -> Self {
+        pub fn new(
+            skm_url: String,
+            proxy: Option<Vec<String>>,
+            from_to: Vec<(Vec<String>, String)>,
+        ) -> Self {
             SKM {
                 skm_url: skm_url,
                 proxy: proxy,
@@ -61,7 +65,7 @@ pub mod skm {
             return_string
         }
 
-        pub fn submit(&self) -> Result<String, String> {
+        pub fn submit(&self) -> Result<Vec<String>, String> {
             // If there is proxy then pick first URL
             let client = reqwest::blocking::Client::new();
 
@@ -76,42 +80,48 @@ pub mod skm {
             };
 
             let actual_response = res.expect("Error: unwrapping SKM response");
-            let from = self.get_station_id(&actual_response, &self.from_to[0]);
-            let to = self.get_station_id(&actual_response, &self.from_to[1]);
-            // Get Data
 
-            let from_id = from;
-            let to_id = to;
+            let mut messages: Vec<String> = vec![];
 
-            // Lets get current data and time
-            let date = chrono::Local::now().format("%Y-%m-%d").to_string();
-            let hour = chrono::Local::now().format("%H").to_string();
-            let minutes = chrono::Local::now().format("%M").to_string();
+            self.from_to.iter().for_each(|(x, msg_prefix)| {
+                let from = self.get_station_id(&actual_response, &x[0]);
+                let to = self.get_station_id(&actual_response, &x[1]);
+                // Get Data
 
-            // Send a request to SKM web page
-            let request = "".to_string()
-                + &self.skm_url
-                + "/rozklad/?from="
-                + from_id
-                + "&to="
-                + to_id
-                + "&date="
-                + &date
-                + "&hour="
-                + &hour
-                + "%3A"
-                + &minutes;
+                let from_id = from;
+                let to_id = to;
 
-            // Get actual times for our chosen destination
-            let res = client
-                .get(&request)
-                .send()
-                .expect("Error sending SKM request")
-                .text();
+                // Lets get current data and time
+                let date = chrono::Local::now().format("%Y-%m-%d").to_string();
+                let hour = chrono::Local::now().format("%H").to_string();
+                let minutes = chrono::Local::now().format("%M").to_string();
 
-            let actual_response = res.expect("Error: unwrapping SKM response");
-            let message = self.get_message(&actual_response, &self.from_to[0]);
-            Ok(message)
+                // Send a request to SKM web page
+                let request = "".to_string()
+                    + &self.skm_url
+                    + "/rozklad/?from="
+                    + from_id
+                    + "&to="
+                    + to_id
+                    + "&date="
+                    + &date
+                    + "&hour="
+                    + &hour
+                    + "%3A"
+                    + &minutes;
+
+                // Get actual times for our chosen destination
+                let res = client
+                    .get(&request)
+                    .send()
+                    .expect("Error sending SKM request")
+                    .text();
+
+                let actual_response = res.expect("Error: unwrapping SKM response");
+                messages.push(msg_prefix.to_owned() + &self.get_message(&actual_response, &x[0]));
+            });
+
+            Ok(messages)
         }
     }
 
@@ -130,12 +140,15 @@ pub mod skm {
             let skm = SKM::new(
                 "https://skm.trojmiasto.pl/".to_string(),
                 None,
-                vec![
-                    "Gdansk Wrzeszcz".to_string(),
-                    "Gdansk Port Lotniczy".to_string(),
-                ],
+                vec![(
+                    vec![
+                        "Gdansk Wrzeszcz".to_string(),
+                        "Gdansk Port Lotniczy".to_string(),
+                    ],
+                    format!("Train to work "),
+                )],
             )
-            .submit();
+            .submit()?;
             Ok(())
         }
 
@@ -150,10 +163,13 @@ pub mod skm {
             let response = SKM::new(
                 "https://skm.trojmiasto.pl/".to_string(),
                 None,
-                vec![
-                    "Gdansk Wrzeszcz".to_string(),
-                    "Gdansk Port Lotniczy".to_string(),
-                ],
+                vec![(
+                    vec![
+                        "Gdansk Wrzeszcz".to_string(),
+                        "Gdansk Port Lotniczy".to_string(),
+                    ],
+                    format!("Train to work "),
+                )],
             )
             .get_message(&s, "Gdansk Wrzeszcz");
             let expected_response = " (Gdansk Wrzeszcz --> ) departs in 16 min, 26 min, 80 min, ";
@@ -172,10 +188,13 @@ pub mod skm {
             let response = SKM::new(
                 "https://skm.trojmiasto.pl/".to_string(),
                 None,
-                vec![
-                    "Gdansk Wrzeszcz".to_string(),
-                    "Gdansk Port Lotniczy".to_string(),
-                ],
+                vec![(
+                    vec![
+                        "Gdansk Wrzeszcz".to_string(),
+                        "Gdansk Port Lotniczy".to_string(),
+                    ],
+                    format!("Train to work "),
+                )],
             )
             .get_message(&s, "Gdansk Wrzeszcz");
             let expected_response = "No connections today";
