@@ -47,11 +47,38 @@ async fn main() {
     // busses
     let try_ztm_messages = ztm::ztm::ZTM::new(
         None,
-        vec![(
-            "1752", // ID of bus stop
-            vec![158],
-            "Bus to Parkour:\n",
-        )],
+        vec![
+            (
+                "1752", // ID of bus stop
+                vec![158],
+                "Bus to Parkour:\n",
+            ),
+            (
+                "1645", // ID of bus stop
+                vec![158],
+                "Bus home from Parkour:\n",
+            ),
+            (
+                "1768", // ID of bus stop
+                vec![227],
+                "Bus to Jelitkowo:\n",
+            ),
+            (
+                "1767", // ID of bus stop
+                vec![227],
+                "Bus to Galeria Baltycka:\n",
+            ),
+            (
+                "2088", // ID of bus stop
+                vec![2, 4, 8],
+                "Tram to Mickiewicza:\n",
+            ),
+            (
+                "2075", // ID of bus stop
+                vec![2, 4, 8],
+                "Tram home from Mickiewicza:\n",
+            ),
+        ],
     )
     .submit();
 
