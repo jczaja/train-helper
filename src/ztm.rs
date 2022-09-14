@@ -70,9 +70,13 @@ pub mod ztm {
             departures: &Vec<(&'a str, Vec<u32>, &'a str)>,
         ) -> HashMap<&'a str, String> {
             let mut bus_stop_names: HashMap<&'a str, String> = HashMap::new();
-            // TODO: Get actual mapping from bust_stop number to its name
-            bus_stop_names.insert("1752", "(GDANSK ZASPA SKM 01 -->): ".to_string());
-
+            // TODO: Get actual mapping from bus stop number to its name
+            bus_stop_names.insert("1752", "(Gdansk Zaspa SKM 01 -->): ".to_string());
+            bus_stop_names.insert("1645", "(Gdansk Stadion 04 -->): ".to_string());
+            bus_stop_names.insert("2088", "(Gdansk Startowa 02 -->): ".to_string());
+            bus_stop_names.insert("2075", "(Gdansk Mickiewicza 01 -->): ".to_string());
+            bus_stop_names.insert("1768", "(Gdansk Hynka 01 -->): ".to_string());
+            bus_stop_names.insert("1767", "(Gdansk Hynka 02 -->): ".to_string());
             bus_stop_names
         }
 
