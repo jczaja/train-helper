@@ -102,7 +102,10 @@ pub mod ztm {
             let mut total_response: Vec<String> = vec![];
             busses.iter().for_each(|e| {
                 let response = body.departures.iter().filter(|d| d.routeId == *e).fold(
-                    "  ".to_string() + &self.bus_stop_names[bus_stop] + &e.to_string() + ":",
+                    "  ".to_string()
+                        + &self.bus_stop_names[bus_stop]
+                        + &e.to_string()
+                        + " departs in:",
                     |response, d| {
                         // Compute estimated time of arrival in minutes
                         //"estimatedTime":"2022-09-07T07:01:57Z",
@@ -208,8 +211,8 @@ pub mod ztm {
                 &chrono::DateTime::from(datetime),
             );
             let expected_response: Vec<String> = vec![
-                "  (GDANSK ZASPA SKM 01 -->): 158: 18 min, 55 min,".to_owned(),
-                "  (GDANSK ZASPA SKM 01 -->): 127: 19 min, 30 min, 48 min, 68 min, 88 min,"
+                "  (GDANSK ZASPA SKM 01 -->): 158 departs in: 18 min, 55 min,".to_owned(),
+                "  (GDANSK ZASPA SKM 01 -->): 127 departs in: 19 min, 30 min, 48 min, 68 min, 88 min,"
                     .to_owned(),
             ];
 

@@ -74,15 +74,20 @@ async fn main() {
         Err(err_msg) => vec![err_msg],
     };
 
+    const FONT_SIZE: f32 = 30.0;
     while running {
+        let mut text_position: f32 = FONT_SIZE;
         clear_background(WHITE);
-        draw_text("HELLO WORLD!", 20.0, 220.0, 20.0, DARKGRAY);
-        skm_messages.iter().for_each(|x| root_ui().label(None, &x));
-        ztm_messages.iter().for_each(|x| root_ui().label(None, &x));
-        if root_ui().button(None, "Exit") {
-            println!("pushed");
-            running = false;
-        }
+        //skm_messages.iter().for_each(|x| root_ui().label(None, &x));
+        //ztm_messages.iter().for_each(|x| root_ui().label(None, &x));
+        skm_messages.iter().for_each(|x| {
+            draw_text(&x, 20.0, text_position, FONT_SIZE, BLACK);
+            text_position += FONT_SIZE
+        });
+        ztm_messages.iter().for_each(|x| {
+            draw_text(&x, 20.0, text_position, FONT_SIZE, BLACK);
+            text_position += FONT_SIZE
+        });
         next_frame().await
     }
     root_ui().pop_skin();
