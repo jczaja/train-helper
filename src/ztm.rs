@@ -216,8 +216,8 @@ pub mod ztm {
                 &chrono::DateTime::from(datetime),
             );
             let expected_response: Vec<String> = vec![
-                "  (GDANSK ZASPA SKM 01 -->): 158 departs in: 18 min, 55 min,".to_owned(),
-                "  (GDANSK ZASPA SKM 01 -->): 127 departs in: 19 min, 30 min, 48 min, 68 min, 88 min,"
+                "  (Gdansk Zaspa SKM 01 -->): 158 departs in: 18 min, 55 min,".to_owned(),
+                "  (Gdansk Zaspa SKM 01 -->): 127 departs in: 19 min, 30 min, 48 min, 68 min, 88 min,"
                     .to_owned(),
             ];
 
