@@ -15,30 +15,30 @@ async fn main() {
                     "Gdansk Wrzeszcz".to_string(),
                     "Gdansk Port Lotniczy".to_string(),
                 ],
-                format!("Train to work "),
+                format!("Train to work: "),
             ),
             (
                 vec![
                     "Gdansk Port Lotniczy".to_string(),
                     "Gdansk Wrzeszcz".to_string(),
                 ],
-                format!("Train home from work"),
+                format!("Train home from work:"),
             ),
             (
                 vec!["Gdansk Zaspa".to_string(), "Sopot".to_string()],
-                format!("Train to Sopot "),
+                format!("Train to Sopot:"),
             ),
             (
                 vec!["Sopot".to_string(), "Gdansk Zaspa".to_string()],
-                format!("Train home from Sopot "),
+                format!("Train home from Sopot:"),
             ),
             (
                 vec!["Gdansk Zaspa".to_string(), "Gdansk Glowny".to_string()],
-                format!("Train to Gdansk "),
+                format!("Train to Gdansk:"),
             ),
             (
                 vec!["Gdansk Glowny".to_string(), "Gdansk Zaspa".to_string()],
-                format!("Train home from Gdansk "),
+                format!("Train home from Gdansk:"),
             ),
         ],
     )
@@ -50,7 +50,7 @@ async fn main() {
         vec![(
             "1752", // ID of bus stop
             vec![158],
-            "Bus to PARKOUR (GDANSK ZASPA SKM 01 -->):\n",
+            "Bus to Parkour:\n",
         )],
     )
     .submit();
@@ -76,7 +76,7 @@ async fn main() {
 
     while running {
         clear_background(WHITE);
-
+        draw_text("HELLO WORLD!", 20.0, 220.0, 20.0, DARKGRAY);
         skm_messages.iter().for_each(|x| root_ui().label(None, &x));
         ztm_messages.iter().for_each(|x| root_ui().label(None, &x));
         if root_ui().button(None, "Exit") {

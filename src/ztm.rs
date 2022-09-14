@@ -1,5 +1,6 @@
 pub mod ztm {
     use serde::{Deserialize, Serialize};
+    use std::collections::HashMap;
 
     // Example JSON
     //{
@@ -60,10 +61,21 @@ pub mod ztm {
         client: reqwest::blocking::Client,
         ztm_url: &'a str,
         proxy: Option<Vec<String>>,
+        bus_stop_names: HashMap<&'a str, String>,
         departures: Vec<(&'a str, Vec<u32>, &'a str)>,
     }
 
     impl<'a> ZTM<'a> {
+        fn get_bus_stop_names(
+            departures: &Vec<(&'a str, Vec<u32>, &'a str)>,
+        ) -> HashMap<&'a str, String> {
+            let mut bus_stop_names: HashMap<&'a str, String> = HashMap::new();
+            // TODO: Get actual mapping from bust_stop number to its name
+            bus_stop_names.insert("1752", "(GDANSK ZASPA SKM 01 -->): ".to_string());
+
+            bus_stop_names
+        }
+
         //  https://mapa.ztm.gda.pl/departures?stopId=1752
         pub fn new(
             proxy: Option<Vec<String>>,
@@ -74,6 +86,7 @@ pub mod ztm {
                 client: reqwest::blocking::Client::new(),
                 proxy,
                 ztm_url: "https://mapa.ztm.gda.pl/departures?stopId=",
+                bus_stop_names: ZTM::get_bus_stop_names(&departures),
                 departures,
             }
         }
@@ -82,13 +95,14 @@ pub mod ztm {
         fn get_message(
             &self,
             body: Response,
+            bus_stop: &str,
             busses: &Vec<u32>,
             date_time: &chrono::DateTime<chrono::Local>,
-        ) -> String {
-            let mut total_response = "".to_owned();
+        ) -> Vec<String> {
+            let mut total_response: Vec<String> = vec![];
             busses.iter().for_each(|e| {
                 let response = body.departures.iter().filter(|d| d.routeId == *e).fold(
-                    e.to_string() + ":",
+                    "  ".to_string() + &self.bus_stop_names[bus_stop] + &e.to_string() + ":",
                     |response, d| {
                         // Compute estimated time of arrival in minutes
                         //"estimatedTime":"2022-09-07T07:01:57Z",
@@ -112,7 +126,7 @@ pub mod ztm {
                         response + &format!(" {} min,", remaining_minutes)
                     },
                 );
-                total_response += &(format!("{}\n", response));
+                total_response.push(response);
             });
             total_response
         }
@@ -128,13 +142,15 @@ pub mod ztm {
                         .send()
                         .expect("Error sending ZTM request");
 
-                    let message = self.get_message(
+                    let mut msgs = self.get_message(
                         res.json::<Response>()
                             .expect("Error converting response to JSON in ZTM"),
+                        bus_stop,
                         busses,
                         &chrono::Local::now(),
                     );
-                    messages.push(format!("{}{}\n", msg_prefix, message));
+                    messages.push(msg_prefix.to_string());
+                    messages.append(&mut msgs);
                 });
 
             Ok(messages)
@@ -185,9 +201,18 @@ pub mod ztm {
                     "Bus to Arena ",
                 )],
             )
-            .get_message(s, &vec![158, 127], &chrono::DateTime::from(datetime));
-            let expected_response =
-                "158: 18 min, 55 min,\n127: 19 min, 30 min, 48 min, 68 min, 88 min,\n";
+            .get_message(
+                s,
+                "1752",
+                &vec![158, 127],
+                &chrono::DateTime::from(datetime),
+            );
+            let expected_response: Vec<String> = vec![
+                "  (GDANSK ZASPA SKM 01 -->): 158: 18 min, 55 min,".to_owned(),
+                "  (GDANSK ZASPA SKM 01 -->): 127: 19 min, 30 min, 48 min, 68 min, 88 min,"
+                    .to_owned(),
+            ];
+
             assert_eq!(response, expected_response);
             Ok(())
         }

@@ -58,7 +58,7 @@ pub mod skm {
                             next_train_minutes += ", "
                         });
 
-                    " (".to_string() + station + " --> ) departs in " + &next_train_minutes
+                    "  (".to_string() + station + " --> ) departs in " + &next_train_minutes
                 }
                 None => "No connections today".to_owned(),
             };
@@ -118,7 +118,8 @@ pub mod skm {
                     .text();
 
                 let actual_response = res.expect("Error: unwrapping SKM response");
-                messages.push(msg_prefix.to_owned() + &self.get_message(&actual_response, &x[0]));
+                messages.push(msg_prefix.to_owned());
+                messages.push(self.get_message(&actual_response, &x[0]));
             });
 
             Ok(messages)
@@ -168,11 +169,11 @@ pub mod skm {
                         "Gdansk Wrzeszcz".to_string(),
                         "Gdansk Port Lotniczy".to_string(),
                     ],
-                    format!("Train to work "),
+                    format!("Train to work:"),
                 )],
             )
             .get_message(&s, "Gdansk Wrzeszcz");
-            let expected_response = " (Gdansk Wrzeszcz --> ) departs in 16 min, 26 min, 80 min, ";
+            let expected_response = "  (Gdansk Wrzeszcz --> ) departs in 16 min, 26 min, 80 min, ";
             assert_eq!(response, expected_response);
             Ok(())
         }
