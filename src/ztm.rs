@@ -56,19 +56,25 @@ pub mod ztm {
         routeId: u32,
     }
 
-    pub struct ZTM {
-        ztm_url: String,
+    pub struct ZTM<'a> {
+        client: reqwest::blocking::Client,
+        ztm_url: &'a str,
         proxy: Option<Vec<String>>,
-        busses: Vec<u32>,
+        departures: Vec<(&'a str, Vec<u32>, &'a str)>,
     }
 
-    impl ZTM {
+    impl<'a> ZTM<'a> {
         //  https://mapa.ztm.gda.pl/departures?stopId=1752
-        pub fn new(proxy: Option<Vec<String>>, from: &str, busses: Vec<u32>) -> Self {
+        pub fn new(
+            proxy: Option<Vec<String>>,
+            departures: Vec<(&'a str, Vec<u32>, &'a str)>,
+        ) -> Self {
             ZTM {
-                ztm_url: "https://mapa.ztm.gda.pl/departures?stopId=".to_string() + from,
-                proxy: proxy,
-                busses: busses,
+                // If there is proxy then pick first URL
+                client: reqwest::blocking::Client::new(),
+                proxy,
+                ztm_url: "https://mapa.ztm.gda.pl/departures?stopId=",
+                departures,
             }
         }
 
@@ -76,10 +82,11 @@ pub mod ztm {
         fn get_message(
             &self,
             body: Response,
+            busses: &Vec<u32>,
             date_time: &chrono::DateTime<chrono::Local>,
         ) -> String {
             let mut total_response = "".to_owned();
-            self.busses.iter().for_each(|e| {
+            busses.iter().for_each(|e| {
                 let response = body.departures.iter().filter(|d| d.routeId == *e).fold(
                     e.to_string() + ":",
                     |response, d| {
@@ -94,7 +101,7 @@ pub mod ztm {
                             &d.estimatedTime
                         ));
 
-                        estimation = match (d.delayInSeconds) {
+                        estimation = match d.delayInSeconds {
                             Some(secs) => estimation + chrono::Duration::seconds(secs as i64),
                             None => estimation,
                         };
@@ -110,50 +117,34 @@ pub mod ztm {
             total_response
         }
 
-        pub fn submit(&self) -> Result<String, String> {
-            // If there is proxy then pick first URL
-            let client = reqwest::blocking::Client::new();
+        pub fn submit(&self) -> Result<Vec<String>, String> {
+            let mut messages: Vec<String> = vec![];
+            self.departures
+                .iter()
+                .for_each(|(bus_stop, busses, msg_prefix)| {
+                    let res = self
+                        .client
+                        .get(&(self.ztm_url.to_string() + bus_stop))
+                        .send()
+                        .expect("Error sending ZTM request");
 
-            // Get IDs of stations e.g. Gdansk Wrzeszcz : 7534
-            let res = client.get(&(self.ztm_url.clone())).send();
+                    let message = self.get_message(
+                        res.json::<Response>()
+                            .expect("Error converting response to JSON in ZTM"),
+                        busses,
+                        &chrono::Local::now(),
+                    );
+                    messages.push(format!("{}{}\n", msg_prefix, message));
+                });
 
-            // HERE is fine to return
-            // Returning here is fine
-            let res = match res {
-                Ok(result) => result.text(),
-                Err(i) => return Err(format!("Error sending ZTM request: {}", i)),
-            };
-
-            let actual_response = res.expect("Error: unwrapping ZTM response");
-            // Get Data
-
-            // Send a request to ZTM web page
-            let request = &self.ztm_url;
-
-            // Get actual times for our chosen destination
-            let mut res = client
-                .get(request)
-                .send()
-                .expect("Error sending ZTM request");
-
-            // Lets get current data and time
-
-            let message = self.get_message(
-                res.json::<Response>()
-                    .expect("Error converting response to JSON in ZTM"),
-                &chrono::Local::now(),
-            );
-            Ok(message)
+            Ok(messages)
         }
     }
 
     #[cfg(test)]
     mod tests {
         use super::*;
-        use serde_json::json;
-        use std::fs::File;
         use std::io::prelude::*;
-        use std::path::Path;
 
         type GenericError = Box<dyn std::error::Error + Send + Sync + 'static>;
         type GenericResult<T> = Result<T, GenericError>;
@@ -163,8 +154,11 @@ pub mod ztm {
         fn test_ztm() -> Result<(), String> {
             let ztm = ZTM::new(
                 None,
-                "1752", // ID of bus stop
-                vec![],
+                vec![(
+                    "1752", // ID of bus stop
+                    vec![],
+                    "Bus to Arena ",
+                )],
             )
             .submit()?;
             Ok(())
@@ -185,10 +179,13 @@ pub mod ztm {
 
             let response = ZTM::new(
                 None,
-                "1752",         // ID of bus stop
-                vec![158, 127], // bus numbers we are interested in
+                vec![(
+                    "1752", // ID of bus stop
+                    vec![158, 127],
+                    "Bus to Arena ",
+                )],
             )
-            .get_message(s, &chrono::DateTime::from(datetime));
+            .get_message(s, &vec![158, 127], &chrono::DateTime::from(datetime));
             let expected_response =
                 "158: 18 min, 55 min,\n127: 19 min, 30 min, 48 min, 68 min, 88 min,\n";
             assert_eq!(response, expected_response);

@@ -45,16 +45,15 @@ async fn main() {
     .submit();
 
     // busses
-    let to_arena = ztm::ztm::ZTM::new(
+    let try_ztm_messages = ztm::ztm::ZTM::new(
         None,
-        "1752", // ID of bus stop
-        vec![158],
+        vec![(
+            "1752", // ID of bus stop
+            vec![158],
+            "Bus to PARKOUR (GDANSK ZASPA SKM 01 -->):\n",
+        )],
     )
     .submit();
-    let to_arena_message = match to_arena {
-        Ok(mesg) => format!("Bus to PARKOUR (GDANSK ZASPA SKM 01 -->):\n {}", mesg),
-        Err(err_msg) => err_msg,
-    };
 
     let mut myskin = root_ui().default_skin().clone();
     myskin.label_style = root_ui().style_builder().font_size(35).build();
@@ -70,11 +69,16 @@ async fn main() {
         Err(err_msg) => vec![err_msg],
     };
 
+    let ztm_messages = match try_ztm_messages {
+        Ok(msgs) => msgs,
+        Err(err_msg) => vec![err_msg],
+    };
+
     while running {
         clear_background(WHITE);
 
         skm_messages.iter().for_each(|x| root_ui().label(None, &x));
-        root_ui().label(None, &to_arena_message);
+        ztm_messages.iter().for_each(|x| root_ui().label(None, &x));
         if root_ui().button(None, "Exit") {
             println!("pushed");
             running = false;
