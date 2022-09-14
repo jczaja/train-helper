@@ -73,6 +73,7 @@ pub mod ztm {
             // TODO: Get actual mapping from bus stop number to its name
             bus_stop_names.insert("1752", "(Gdansk Zaspa SKM 01 -->): ".to_string());
             bus_stop_names.insert("1645", "(Gdansk Stadion 04 -->): ".to_string());
+            bus_stop_names.insert("1988", "(Gdansk Stadion 06 -->): ".to_string());
             bus_stop_names.insert("2088", "(Gdansk Startowa 02 -->): ".to_string());
             bus_stop_names.insert("2075", "(Gdansk Mickiewicza 01 -->): ".to_string());
             bus_stop_names.insert("1768", "(Gdansk Hynka 01 -->): ".to_string());
