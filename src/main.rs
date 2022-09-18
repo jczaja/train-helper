@@ -90,7 +90,6 @@ async fn main() {
         .font_size(80)
         .build();
     root_ui().push_skin(&myskin);
-    let mut running = true;
     let skm_messages = match messages {
         Ok(msgs) => msgs,
         Err(err_msg) => vec![err_msg],
@@ -102,7 +101,7 @@ async fn main() {
     };
 
     const FONT_SIZE: f32 = 30.0;
-    while running {
+    loop {
         let mut text_position: f32 = FONT_SIZE;
         clear_background(WHITE);
         //skm_messages.iter().for_each(|x| root_ui().label(None, &x));
@@ -117,5 +116,4 @@ async fn main() {
         });
         next_frame().await
     }
-    root_ui().pop_skin();
 }
