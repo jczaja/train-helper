@@ -23,7 +23,10 @@ pub mod skm {
         fn get_station_id<'a>(&self, body: &'a str, station: &str) -> &'a str {
             // Replace white characters with commas
             let re = Regex::new(r"\s+").unwrap();
-            let t = re.replace_all(station, ",").to_lowercase();
+            let mut t = re.replace_all(station, ",").to_lowercase();
+            if t.contains("lotniczy") {
+                t += ",lotnisko";
+            }
 
             // We connstruct search pattern. for example:
             // "data-keywords="gdansk,wrzeszcz" value=\""
