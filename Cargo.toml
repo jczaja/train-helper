@@ -13,6 +13,10 @@ icon = "@mipmap/skm_launcher"
 [[package.metadata.android.permission]]
 name = "android.permission.INTERNET"
 
+# Enable symbols for profiling
+#[profile.release]
+#debug = 1
+
 [dependencies]
 macroquad = "0.3"
 reqwest = { version = "0.11.11", default-features = false, features = ["blocking", "rustls-tls", "json"] }
