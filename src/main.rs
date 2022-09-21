@@ -49,7 +49,7 @@ async fn main() {
         None,
         vec![
             (
-                "1752", // ID of bus stop
+                "1482", // ID of bus stop
                 vec![158, 258],
                 "Bus to Parkour:\n",
             ),
