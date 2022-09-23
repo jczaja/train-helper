@@ -80,6 +80,7 @@ pub mod ztm {
             bus_stop_names.insert("1767", "(Gdansk Hynka 02 -->): ".to_string());
             bus_stop_names.insert("1482", "(Gdansk Dywizjonu 303 01 -->): ".to_string());
             bus_stop_names.insert("1485", "(Gdansk Pilotow 01 -->): ".to_string());
+            bus_stop_names.insert("1404", "(Gdansk Firoga 01 -->): ".to_string());
             bus_stop_names
         }
 

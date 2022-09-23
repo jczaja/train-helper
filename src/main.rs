@@ -26,6 +26,20 @@ fn get_messages(sender: mpsc::Sender<(Vec<String>, Vec<String>)>) -> std::thread
                         format!("Train home from work:"),
                     ),
                     (
+                        vec![
+                            "Gdansk Port Lotniczy".to_string(),
+                            "Gdynia Glowna".to_string(),
+                        ],
+                        format!("Train to Gdynia Glowna:"),
+                    ),
+                    (
+                        vec![
+                            "Gdansk Port Lotniczy".to_string(),
+                            "Koscierzyna".to_string(),
+                        ],
+                        format!("Train to Koscierzyna:"),
+                    ),
+                    (
                         vec!["Gdansk Zaspa".to_string(), "Sopot".to_string()],
                         format!("Train to Sopot:"),
                     ),
@@ -78,6 +92,21 @@ fn get_messages(sender: mpsc::Sender<(Vec<String>, Vec<String>)>) -> std::thread
                         "2075", // ID of bus stop
                         vec![2, 4, 8],
                         "Tram home from Mickiewicza:\n",
+                    ),
+                    (
+                        "1404", // ID of bus stop
+                        vec![110],
+                        "Bus to Gdansk Wrzeszcz (Through IKEA):\n",
+                    ),
+                    (
+                        "1404", // ID of bus stop
+                        vec![210],
+                        "Bus to Gdansk Glowny (Through IKEA):\n",
+                    ),
+                    (
+                        "1404", // ID of bus stop
+                        vec![122],
+                        "Bus to Sopot (Through IKEA):\n",
                     ),
                 ],
             )
