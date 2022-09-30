@@ -1,9 +1,10 @@
 mod skm;
 mod ztm;
-use std::sync::mpsc;
+use futures::executor::block_on;
 
-pub fn get_messages() -> (Vec<String>, Vec<String>) {
-    let messages = skm::skm::SKM::new(
+async fn get_requests() -> (Result<Vec<String>, String>, Result<Vec<String>, String>)
+{
+    let try_skm_messages = skm::skm::SKM::new(
         "https://skm.trojmiasto.pl/".to_string(),
         None,
         vec![
@@ -52,8 +53,7 @@ pub fn get_messages() -> (Vec<String>, Vec<String>) {
                 format!("Train home from Gdansk:"),
             ),
         ],
-    )
-    .submit();
+    );
 
     // busses
     let try_ztm_messages = ztm::ztm::ZTM::new(
@@ -108,7 +108,16 @@ pub fn get_messages() -> (Vec<String>, Vec<String>) {
     )
     .submit();
 
-    let skm_messages = match messages {
+    (try_skm_messages.submit().await, try_ztm_messages)
+}
+
+
+
+pub fn get_messages() -> (Vec<String>, Vec<String>) {
+
+    let (try_skm_messages,try_ztm_messages) = block_on(get_requests());
+
+    let skm_messages = match try_skm_messages {
         Ok(msgs) => msgs,
         Err(err_msg) => vec![err_msg],
     };

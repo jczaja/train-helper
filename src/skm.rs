@@ -68,25 +68,9 @@ pub mod skm {
             return_string
         }
 
-        pub fn submit(&self) -> Result<Vec<String>, String> {
-            // If there is proxy then pick first URL
-            let client = reqwest::blocking::Client::new();
 
-            // Get IDs of stations e.g. Gdansk Wrzeszcz : 7534
-            let res = client.get(&(self.skm_url.clone())).send();
+        async fn get_info(&self, x : Vec<String> ,msg_prefix : String, messages: &mut Vec<String>, actual_response : &str, client : &reqwest::Client) {
 
-            // HERE is fine to return
-            // Returning here is fine
-            let res = match res {
-                Ok(result) => result.text(),
-                Err(i) => return Err(format!("Error sending SKM request: {}", i)),
-            };
-
-            let actual_response = res.expect("Error: unwrapping SKM response");
-
-            let mut messages: Vec<String> = vec![];
-
-            self.from_to.iter().for_each(|(x, msg_prefix)| {
                 let from = self.get_station_id(&actual_response, &x[0]);
                 let to = self.get_station_id(&actual_response, &x[1]);
                 // Get Data
@@ -117,13 +101,42 @@ pub mod skm {
                 let res = client
                     .get(&request)
                     .send()
+                    .await
                     .expect("Error sending SKM request")
                     .text();
 
-                let actual_response = res.expect("Error: unwrapping SKM response");
+                let actual_response = res.await.expect("Error: unwrapping SKM response");
                 messages.push(msg_prefix.to_owned());
                 messages.push(self.get_message(&actual_response, &x[0]));
-            });
+        }
+
+        pub async fn submit(&self) -> Result<Vec<String>, String> {
+            // If there is proxy then pick first URL
+            let client = reqwest::Client::new();
+
+            // Get IDs of stations e.g. Gdansk Wrzeszcz : 7534
+            let res = client.get(&(self.skm_url.clone())).send().await;
+
+            // HERE is fine to return
+            // Returning here is fine
+            let res = match res{
+                Ok(result) => result.text(),
+                Err(i) => return Err(format!("Error sending SKM request: {}", i)),
+            };
+
+            let actual_response = res.await.expect("Error: unwrapping SKM response");
+
+            let mut messages: Vec<String> = vec![];
+
+//            let mut myfutures : Vec<impl > = Vec::new(); 
+            let mut myfutures : Vec<_> = Vec::new(); 
+
+            // TODO compiling
+            for (x, msg_prefix) in self.from_to {
+                myfutures.push(self.get_info(x, msg_prefix, &mut messages, &actual_response,&client));
+            };
+
+            futures::future::join_all(myfutures);
 
             Ok(messages)
         }
