@@ -1,5 +1,8 @@
 pub mod skm {
     use regex::Regex;
+    use std::cell::RefCell;
+    use std::rc::Rc;
+
 
     pub struct SKM {
         skm_url: String,
@@ -69,7 +72,7 @@ pub mod skm {
         }
 
 
-        async fn get_info(&self, x : Vec<String> ,msg_prefix : String, messages: &mut Vec<String>, actual_response : &str, client : &reqwest::Client) {
+        async fn get_info(&self, x : &Vec<String> ,msg_prefix : &str, messages: &Rc<RefCell<Vec<String>>>, actual_response : &str, client : &reqwest::Client) {
 
                 let from = self.get_station_id(&actual_response, &x[0]);
                 let to = self.get_station_id(&actual_response, &x[1]);
@@ -106,11 +109,13 @@ pub mod skm {
                     .text();
 
                 let actual_response = res.await.expect("Error: unwrapping SKM response");
-                messages.push(msg_prefix.to_owned());
-                messages.push(self.get_message(&actual_response, &x[0]));
+                messages.borrow_mut().push(msg_prefix.to_owned());
+                messages.borrow_mut().push(self.get_message(&actual_response, &x[0]));
         }
 
-        pub async fn submit(&self) -> Result<Vec<String>, String> {
+        pub async fn submit(&self) -> Result<Rc<RefCell<Vec<String>>>, String> {
+
+
             // If there is proxy then pick first URL
             let client = reqwest::Client::new();
 
@@ -126,14 +131,13 @@ pub mod skm {
 
             let actual_response = res.await.expect("Error: unwrapping SKM response");
 
-            let mut messages: Vec<String> = vec![];
+            let mut messages = Rc::new(RefCell::new(vec![]));
 
 //            let mut myfutures : Vec<impl > = Vec::new(); 
             let mut myfutures : Vec<_> = Vec::new(); 
 
-            // TODO compiling
-            for (x, msg_prefix) in self.from_to {
-                myfutures.push(self.get_info(x, msg_prefix, &mut messages, &actual_response,&client));
+            for (x, msg_prefix) in &self.from_to {
+                myfutures.push(self.get_info(x, msg_prefix, &messages, &actual_response,&client));
             };
 
             futures::future::join_all(myfutures);

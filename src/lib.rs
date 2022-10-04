@@ -1,8 +1,9 @@
 mod skm;
 mod ztm;
-use futures::executor::block_on;
+use std::cell::RefCell;
+use std::rc::Rc;
 
-async fn get_requests() -> (Result<Vec<String>, String>, Result<Vec<String>, String>)
+async fn get_requests() -> (Result<Rc<RefCell<Vec<String>>>, String>, Result<Vec<String>, String>)
 {
     let try_skm_messages = skm::skm::SKM::new(
         "https://skm.trojmiasto.pl/".to_string(),
@@ -113,13 +114,13 @@ async fn get_requests() -> (Result<Vec<String>, String>, Result<Vec<String>, Str
 
 
 
-pub fn get_messages() -> (Vec<String>, Vec<String>) {
+pub fn get_messages() -> (RefCell<Vec<String>>, Vec<String>) {
 
-    let (try_skm_messages,try_ztm_messages) = block_on(get_requests());
+    let (try_skm_messages,try_ztm_messages) = futures::executor::block_on(get_requests());
 
     let skm_messages = match try_skm_messages {
         Ok(msgs) => msgs,
-        Err(err_msg) => vec![err_msg],
+        Err(err_msg) => Rc::new(RefCell::new(vec![err_msg])),
     };
 
     let ztm_messages = match try_ztm_messages {
@@ -127,5 +128,5 @@ pub fn get_messages() -> (Vec<String>, Vec<String>) {
         Err(err_msg) => vec![err_msg],
     };
 
-    (skm_messages, ztm_messages)
+    (((*skm_messages).clone()), ztm_messages)
 }
