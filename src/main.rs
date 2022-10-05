@@ -2,7 +2,7 @@ use macroquad::prelude::*;
 use std::cell::RefCell;
 use std::sync::mpsc;
 
-async fn draw(reciever: std::sync::mpsc::Receiver<(RefCell<Vec<String>>, Vec<String>)>) {
+async fn draw(reciever: std::sync::mpsc::Receiver<(RefCell<Vec<String>>, RefCell<Vec<String>>)>) {
     // Make a separate thread with macroquad rendering
     let (mut skm_messages, mut ztm_messages) = reciever.recv().expect("Sender hanged up");
     const FONT_SIZE: f32 = 30.0;
@@ -20,7 +20,7 @@ async fn draw(reciever: std::sync::mpsc::Receiver<(RefCell<Vec<String>>, Vec<Str
             draw_text(&x, 20.0, text_position, FONT_SIZE, BLACK);
             text_position += FONT_SIZE
         });
-        ztm_messages.iter().for_each(|x| {
+        ztm_messages.borrow().iter().for_each(|x| {
             draw_text(&x, 20.0, text_position, FONT_SIZE, BLACK);
             text_position += FONT_SIZE
         });
@@ -28,7 +28,7 @@ async fn draw(reciever: std::sync::mpsc::Receiver<(RefCell<Vec<String>>, Vec<Str
     }
 }
 
-fn open_window(reciever: std::sync::mpsc::Receiver<(RefCell<Vec<String>>, Vec<String>)>) {
+fn open_window(reciever: std::sync::mpsc::Receiver<(RefCell<Vec<String>>, RefCell<Vec<String>>)>) {
     std::thread::spawn(move || {
         macroquad::Window::from_config(
             Conf {
@@ -43,7 +43,7 @@ fn open_window(reciever: std::sync::mpsc::Receiver<(RefCell<Vec<String>>, Vec<St
 }
 
 fn main() {
-    let (sender, reciever) = mpsc::channel::<(RefCell<Vec<String>>, Vec<String>)>();
+    let (sender, reciever) = mpsc::channel::<(RefCell<Vec<String>>, RefCell<Vec<String>>)>();
 
     std::thread::spawn(move || loop {
         sender
@@ -54,6 +54,6 @@ fn main() {
     open_window(reciever);
 
     loop {
-        std::thread::sleep(std::time::Duration::new(10000000,0));
+        std::thread::sleep(std::time::Duration::new(10000000, 0));
     }
 }

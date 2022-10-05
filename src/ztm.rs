@@ -1,6 +1,8 @@
 pub mod ztm {
     use serde::{Deserialize, Serialize};
+    use std::cell::RefCell;
     use std::collections::HashMap;
+    use std::rc::Rc;
 
     // Example JSON
     //{
@@ -58,7 +60,7 @@ pub mod ztm {
     }
 
     pub struct ZTM<'a> {
-        client: reqwest::blocking::Client,
+        client: reqwest::Client,
         ztm_url: &'a str,
         proxy: Option<Vec<String>>,
         bus_stop_names: HashMap<&'a str, String>,
@@ -81,17 +83,17 @@ pub mod ztm {
             bus_stop_names.insert("1482", "(Gdansk Dywizjonu 303 01 -->): ".to_string());
             bus_stop_names.insert("1485", "(Gdansk Pilotow 01 -->): ".to_string());
             bus_stop_names.insert("1404", "(Gdansk Firoga 01 -->): ".to_string());
+            bus_stop_names.insert("1634", "(Gdansk Galeria Baltycka 07 -->): ".to_string());
             bus_stop_names
         }
 
-        //  https://mapa.ztm.gda.pl/departures?stopId=1752
         pub fn new(
             proxy: Option<Vec<String>>,
             departures: Vec<(&'a str, Vec<u32>, &'a str)>,
         ) -> Self {
             ZTM {
                 // If there is proxy then pick first URL
-                client: reqwest::blocking::Client::new(),
+                client: reqwest::Client::new(),
                 proxy,
                 ztm_url: "https://mapa.ztm.gda.pl/departures?stopId=",
                 bus_stop_names: ZTM::get_bus_stop_names(&departures),
@@ -142,27 +144,41 @@ pub mod ztm {
             total_response
         }
 
-        pub fn submit(&self) -> Result<Vec<String>, String> {
-            let mut messages: Vec<String> = vec![];
-            self.departures
-                .iter()
-                .for_each(|(bus_stop, busses, msg_prefix)| {
-                    let res = self
-                        .client
-                        .get(&(self.ztm_url.to_string() + bus_stop))
-                        .send()
-                        .expect("Error sending ZTM request");
+        async fn get_info(
+            &self,
+            bus_stop: &str,
+            busses: &Vec<u32>,
+            msg_prefix: &str,
+            messages: &Rc<RefCell<Vec<String>>>,
+        ) {
+            let res = self
+                .client
+                .get(&(self.ztm_url.to_string() + bus_stop))
+                .send()
+                .await
+                .expect("Error: fetching ZTM data");
 
-                    let mut msgs = self.get_message(
-                        res.json::<Response>()
-                            .expect("Error converting response to JSON in ZTM"),
-                        bus_stop,
-                        busses,
-                        &chrono::Local::now(),
-                    );
-                    messages.push(msg_prefix.to_string());
-                    messages.append(&mut msgs);
-                });
+            let mut msgs = self.get_message(
+                res.json::<Response>()
+                    .await
+                    .expect("Error converting response to JSON in ZTM"),
+                bus_stop,
+                busses,
+                &chrono::Local::now(),
+            );
+            messages.borrow_mut().push(msg_prefix.to_string());
+            messages.borrow_mut().append(&mut msgs);
+        }
+
+        pub async fn submit(&self) -> Result<Rc<RefCell<Vec<String>>>, String> {
+            let messages = Rc::new(RefCell::new(vec![]));
+            let mut myfutures: Vec<_> = Vec::new();
+
+            for (bus_stop, busses, msg_prefix) in &self.departures {
+                myfutures.push(self.get_info(bus_stop, busses, msg_prefix, &messages));
+            }
+
+            futures::future::join_all(myfutures).await;
 
             Ok(messages)
         }
@@ -186,8 +202,13 @@ pub mod ztm {
                     vec![],
                     "Bus to Arena ",
                 )],
-            )
-            .submit()?;
+            );
+
+            let rt = tokio::runtime::Builder::new_current_thread()
+                .enable_all()
+                .build()
+                .expect("Error: Unable to init runtime");
+            rt.block_on(ztm.submit())?;
             Ok(())
         }
 
