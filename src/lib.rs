@@ -1,9 +1,13 @@
 mod skm;
 mod ztm;
-use std::sync::mpsc;
+use std::cell::RefCell;
+use std::rc::Rc;
 
-pub fn get_messages() -> (Vec<String>, Vec<String>) {
-    let messages = skm::skm::SKM::new(
+async fn get_requests() -> (
+    Result<Rc<RefCell<Vec<String>>>, String>,
+    Result<Rc<RefCell<Vec<String>>>, String>,
+) {
+    let try_skm_messages = skm::skm::SKM::new(
         "https://skm.trojmiasto.pl/".to_string(),
         None,
         vec![
@@ -52,8 +56,7 @@ pub fn get_messages() -> (Vec<String>, Vec<String>) {
                 format!("Train home from Gdansk:"),
             ),
         ],
-    )
-    .submit();
+    );
 
     // busses
     let try_ztm_messages = ztm::ztm::ZTM::new(
@@ -70,14 +73,19 @@ pub fn get_messages() -> (Vec<String>, Vec<String>) {
                 "Bus home from Parkour:\n",
             ),
             (
-                "1768", // ID of bus stop
-                vec![227],
-                "Bus to Jelitkowo:\n",
-            ),
-            (
                 "1767", // ID of bus stop
                 vec![227],
                 "Bus to Galeria Baltycka:\n",
+            ),
+            (
+                "1634", // ID of bus stop
+                vec![227],
+                "Bus home from Galeria Baltycka:\n",
+            ),
+            (
+                "1768", // ID of bus stop
+                vec![227],
+                "Bus to Jelitkowo:\n",
             ),
             (
                 "2088", // ID of bus stop
@@ -105,18 +113,30 @@ pub fn get_messages() -> (Vec<String>, Vec<String>) {
                 "Bus to Sopot (Through IKEA):\n",
             ),
         ],
-    )
-    .submit();
+    );
 
-    let skm_messages = match messages {
+    (
+        try_skm_messages.submit().await,
+        try_ztm_messages.submit().await,
+    )
+}
+
+pub fn get_messages() -> (RefCell<Vec<String>>, RefCell<Vec<String>>) {
+    let rt = tokio::runtime::Builder::new_current_thread()
+        .enable_all()
+        .build()
+        .expect("Error: Unable to init runtime");
+    let (try_skm_messages, try_ztm_messages) = rt.block_on(get_requests());
+
+    let skm_messages = match try_skm_messages {
         Ok(msgs) => msgs,
-        Err(err_msg) => vec![err_msg],
+        Err(err_msg) => Rc::new(RefCell::new(vec![err_msg])),
     };
 
     let ztm_messages = match try_ztm_messages {
         Ok(msgs) => msgs,
-        Err(err_msg) => vec![err_msg],
+        Err(err_msg) => Rc::new(RefCell::new(vec![err_msg])),
     };
 
-    (skm_messages, ztm_messages)
+    (((*skm_messages).clone()), ((*ztm_messages).clone()))
 }

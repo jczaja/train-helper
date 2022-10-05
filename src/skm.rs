@@ -1,5 +1,7 @@
 pub mod skm {
     use regex::Regex;
+    use std::cell::RefCell;
+    use std::rc::Rc;
 
     pub struct SKM {
         skm_url: String,
@@ -68,12 +70,60 @@ pub mod skm {
             return_string
         }
 
-        pub fn submit(&self) -> Result<Vec<String>, String> {
+        async fn get_info(
+            &self,
+            x: &Vec<String>,
+            msg_prefix: &str,
+            messages: &Rc<RefCell<Vec<String>>>,
+            actual_response: &str,
+            client: &reqwest::Client,
+        ) {
+            let from = self.get_station_id(&actual_response, &x[0]);
+            let to = self.get_station_id(&actual_response, &x[1]);
+            // Get Data
+
+            let from_id = from;
+            let to_id = to;
+
+            // Lets get current data and time
+            let date = chrono::Local::now().format("%Y-%m-%d").to_string();
+            let hour = chrono::Local::now().format("%H").to_string();
+            let minutes = chrono::Local::now().format("%M").to_string();
+
+            // Send a request to SKM web page
+            let request = "".to_string()
+                + &self.skm_url
+                + "/rozklad/?from="
+                + from_id
+                + "&to="
+                + to_id
+                + "&date="
+                + &date
+                + "&hour="
+                + &hour
+                + "%3A"
+                + &minutes;
+
+            // Get actual times for our chosen destination
+            let res = client
+                .get(&request)
+                .send()
+                .await
+                .expect("Error sending SKM request")
+                .text();
+
+            let actual_response = res.await.expect("Error: unwrapping SKM response");
+            messages.borrow_mut().push(msg_prefix.to_owned());
+            let mystring = self.get_message(&actual_response, &x[0]);
+            messages.borrow_mut().push(mystring);
+        }
+
+        pub async fn submit(&self) -> Result<Rc<RefCell<Vec<String>>>, String> {
             // If there is proxy then pick first URL
-            let client = reqwest::blocking::Client::new();
+            let client = reqwest::Client::new();
 
             // Get IDs of stations e.g. Gdansk Wrzeszcz : 7534
-            let res = client.get(&(self.skm_url.clone())).send();
+            let res = client.get(&(self.skm_url.clone())).send().await;
 
             // HERE is fine to return
             // Returning here is fine
@@ -82,48 +132,17 @@ pub mod skm {
                 Err(i) => return Err(format!("Error sending SKM request: {}", i)),
             };
 
-            let actual_response = res.expect("Error: unwrapping SKM response");
+            let actual_response = res.await.expect("Error: unwrapping SKM response");
 
-            let mut messages: Vec<String> = vec![];
+            let messages = Rc::new(RefCell::new(vec![]));
 
-            self.from_to.iter().for_each(|(x, msg_prefix)| {
-                let from = self.get_station_id(&actual_response, &x[0]);
-                let to = self.get_station_id(&actual_response, &x[1]);
-                // Get Data
+            let mut myfutures: Vec<_> = Vec::new();
 
-                let from_id = from;
-                let to_id = to;
+            for (x, msg_prefix) in &self.from_to {
+                myfutures.push(self.get_info(x, msg_prefix, &messages, &actual_response, &client));
+            }
 
-                // Lets get current data and time
-                let date = chrono::Local::now().format("%Y-%m-%d").to_string();
-                let hour = chrono::Local::now().format("%H").to_string();
-                let minutes = chrono::Local::now().format("%M").to_string();
-
-                // Send a request to SKM web page
-                let request = "".to_string()
-                    + &self.skm_url
-                    + "/rozklad/?from="
-                    + from_id
-                    + "&to="
-                    + to_id
-                    + "&date="
-                    + &date
-                    + "&hour="
-                    + &hour
-                    + "%3A"
-                    + &minutes;
-
-                // Get actual times for our chosen destination
-                let res = client
-                    .get(&request)
-                    .send()
-                    .expect("Error sending SKM request")
-                    .text();
-
-                let actual_response = res.expect("Error: unwrapping SKM response");
-                messages.push(msg_prefix.to_owned());
-                messages.push(self.get_message(&actual_response, &x[0]));
-            });
+            futures::future::join_all(myfutures).await;
 
             Ok(messages)
         }
@@ -132,9 +151,7 @@ pub mod skm {
     #[cfg(test)]
     mod tests {
         use super::*;
-        use std::fs::File;
         use std::io::prelude::*;
-        use std::path::Path;
 
         type GenericError = Box<dyn std::error::Error + Send + Sync + 'static>;
         type GenericResult<T> = Result<T, GenericError>;
@@ -151,8 +168,13 @@ pub mod skm {
                     ],
                     format!("Train to work "),
                 )],
-            )
-            .submit()?;
+            );
+
+            let rt = tokio::runtime::Builder::new_current_thread()
+                .enable_all()
+                .build()
+                .expect("Error: Unable to init runtime");
+            rt.block_on(skm.submit())?;
             Ok(())
         }
 
