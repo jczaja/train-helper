@@ -149,7 +149,8 @@ pub mod ztm {
             bus_stop: &str,
             busses: &Vec<u32>,
             msg_prefix: &str,
-            messages: &Rc<RefCell<Vec<String>>>,
+            order_number: u32,
+            messages: &Rc<RefCell<Vec<(String, u32)>>>,
         ) {
             let res = self
                 .client
@@ -158,7 +159,7 @@ pub mod ztm {
                 .await
                 .expect("Error: fetching ZTM data");
 
-            let mut msgs = self.get_message(
+            let msgs = self.get_message(
                 res.json::<Response>()
                     .await
                     .expect("Error converting response to JSON in ZTM"),
@@ -166,16 +167,27 @@ pub mod ztm {
                 busses,
                 &chrono::Local::now(),
             );
-            messages.borrow_mut().push(msg_prefix.to_string());
-            messages.borrow_mut().append(&mut msgs);
+            let scale = 6;
+            messages
+                .borrow_mut()
+                .push((msg_prefix.to_string(), order_number << scale));
+            let mut ordered_msgs: Vec<(String, u32)> = vec![];
+            let mut i: u32 = 0;
+            for msg in msgs {
+                ordered_msgs.push((msg, order_number << scale + i));
+                i += i;
+            }
+            messages.borrow_mut().append(&mut ordered_msgs);
         }
 
-        pub async fn submit(&self) -> Result<Rc<RefCell<Vec<String>>>, String> {
+        pub async fn submit(&self) -> Result<Rc<RefCell<Vec<(String, u32)>>>, String> {
             let messages = Rc::new(RefCell::new(vec![]));
             let mut myfutures: Vec<_> = Vec::new();
 
+            let mut i = 0;
             for (bus_stop, busses, msg_prefix) in &self.departures {
-                myfutures.push(self.get_info(bus_stop, busses, msg_prefix, &messages));
+                myfutures.push(self.get_info(bus_stop, busses, msg_prefix, i, &messages));
+                i += 1;
             }
 
             futures::future::join_all(myfutures).await;
