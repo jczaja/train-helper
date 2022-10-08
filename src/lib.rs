@@ -4,8 +4,8 @@ use std::cell::RefCell;
 use std::rc::Rc;
 
 async fn get_requests() -> (
-    Result<Rc<RefCell<Vec<String>>>, String>,
-    Result<Rc<RefCell<Vec<String>>>, String>,
+    Result<Rc<RefCell<Vec<(String, u32)>>>, String>,
+    Result<Rc<RefCell<Vec<(String, u32)>>>, String>,
 ) {
     let try_skm_messages = skm::skm::SKM::new(
         "https://skm.trojmiasto.pl/".to_string(),
@@ -121,7 +121,7 @@ async fn get_requests() -> (
     )
 }
 
-pub fn get_messages() -> (RefCell<Vec<String>>, RefCell<Vec<String>>) {
+pub fn get_messages() -> (Vec<String>, Vec<String>) {
     let rt = tokio::runtime::Builder::new_current_thread()
         .enable_all()
         .build()
@@ -129,14 +129,26 @@ pub fn get_messages() -> (RefCell<Vec<String>>, RefCell<Vec<String>>) {
     let (try_skm_messages, try_ztm_messages) = rt.block_on(get_requests());
 
     let skm_messages = match try_skm_messages {
-        Ok(msgs) => msgs,
-        Err(err_msg) => Rc::new(RefCell::new(vec![err_msg])),
+        Ok(msgs) => {
+            msgs.borrow_mut()
+                .sort_by(|(_a1, a2), (_b1, b2)| a2.partial_cmp(b2).unwrap());
+            let just_messages: Vec<String> =
+                msgs.borrow().clone().into_iter().map(|(a, _b)| a).collect();
+            just_messages
+        }
+        Err(err_msg) => vec![(err_msg)],
     };
 
     let ztm_messages = match try_ztm_messages {
-        Ok(msgs) => msgs,
-        Err(err_msg) => Rc::new(RefCell::new(vec![err_msg])),
+        Ok(msgs) => {
+            msgs.borrow_mut()
+                .sort_by(|(_a1, a2), (_b1, b2)| a2.partial_cmp(b2).unwrap());
+            let just_messages: Vec<String> =
+                msgs.borrow().clone().into_iter().map(|(a, _b)| a).collect();
+            just_messages
+        }
+        Err(err_msg) => vec![err_msg],
     };
 
-    (((*skm_messages).clone()), ((*ztm_messages).clone()))
+    (skm_messages, ztm_messages)
 }

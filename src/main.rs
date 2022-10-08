@@ -4,7 +4,7 @@ use std::sync::mpsc;
 
 #[macroquad::main("Train-Helper")]
 async fn main() {
-    let (sender, reciever) = mpsc::channel::<(RefCell<Vec<String>>, RefCell<Vec<String>>)>();
+    let (sender, reciever) = mpsc::channel::<(Vec<String>, Vec<String>)>();
 
     std::thread::spawn(move || loop {
         sender
@@ -25,11 +25,11 @@ async fn main() {
         };
 
         clear_background(WHITE);
-        skm_messages.borrow().iter().for_each(|x| {
+        skm_messages.iter().for_each(|x| {
             draw_text(&x, 20.0, text_position, FONT_SIZE, BLACK);
             text_position += FONT_SIZE;
         });
-        ztm_messages.borrow().iter().for_each(|x| {
+        ztm_messages.iter().for_each(|x| {
             draw_text(&x, 20.0, text_position, FONT_SIZE, BLACK);
             text_position += FONT_SIZE;
         });

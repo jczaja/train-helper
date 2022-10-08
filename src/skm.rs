@@ -74,7 +74,8 @@ pub mod skm {
             &self,
             x: &Vec<String>,
             msg_prefix: &str,
-            messages: &Rc<RefCell<Vec<String>>>,
+            order_number: u32,
+            messages: &Rc<RefCell<Vec<(String, u32)>>>,
             actual_response: &str,
             client: &reqwest::Client,
         ) {
@@ -113,12 +114,16 @@ pub mod skm {
                 .text();
 
             let actual_response = res.await.expect("Error: unwrapping SKM response");
-            messages.borrow_mut().push(msg_prefix.to_owned());
+            messages
+                .borrow_mut()
+                .push((msg_prefix.to_owned(), order_number << 1));
             let mystring = self.get_message(&actual_response, &x[0]);
-            messages.borrow_mut().push(mystring);
+            messages
+                .borrow_mut()
+                .push((mystring, (order_number << 1) + 1));
         }
 
-        pub async fn submit(&self) -> Result<Rc<RefCell<Vec<String>>>, String> {
+        pub async fn submit(&self) -> Result<Rc<RefCell<Vec<(String, u32)>>>, String> {
             // If there is proxy then pick first URL
             let client = reqwest::Client::new();
 
@@ -138,8 +143,17 @@ pub mod skm {
 
             let mut myfutures: Vec<_> = Vec::new();
 
+            let mut i = 0;
             for (x, msg_prefix) in &self.from_to {
-                myfutures.push(self.get_info(x, msg_prefix, &messages, &actual_response, &client));
+                myfutures.push(self.get_info(
+                    x,
+                    msg_prefix,
+                    i,
+                    &messages,
+                    &actual_response,
+                    &client,
+                ));
+                i += 1;
             }
 
             futures::future::join_all(myfutures).await;
