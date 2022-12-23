@@ -13,47 +13,17 @@ async fn get_requests() -> (
         vec![
             (
                 vec![
+                    "Gdansk Port Lotniczy".to_string(), //TODO: Add support to Firoga
                     "Gdansk Wrzeszcz".to_string(),
-                    "Gdansk Port Lotniczy".to_string(),
                 ],
-                format!("Train to work: "),
+                format!("Train to Wrzeszcz "),
             ),
             (
                 vec![
-                    "Gdansk Port Lotniczy".to_string(),
-                    "Gdansk Wrzeszcz".to_string(),
-                ],
-                format!("Train home from work:"),
-            ),
-            (
-                vec![
-                    "Gdansk Port Lotniczy".to_string(),
+                    "Gdansk Port Lotniczy".to_string(), //TODO: Add support to Firoga
                     "Gdynia Glowna".to_string(),
                 ],
-                format!("Train to Gdynia Glowna:"),
-            ),
-            (
-                vec![
-                    "Gdansk Port Lotniczy".to_string(),
-                    "Koscierzyna".to_string(),
-                ],
-                format!("Train to Koscierzyna:"),
-            ),
-            (
-                vec!["Gdansk Zaspa".to_string(), "Sopot".to_string()],
-                format!("Train to Sopot:"),
-            ),
-            (
-                vec!["Sopot".to_string(), "Gdansk Zaspa".to_string()],
-                format!("Train home from Sopot:"),
-            ),
-            (
-                vec!["Gdansk Zaspa".to_string(), "Gdansk Glowny".to_string()],
-                format!("Train to Gdansk:"),
-            ),
-            (
-                vec!["Gdansk Glowny".to_string(), "Gdansk Zaspa".to_string()],
-                format!("Train home from Gdansk:"),
+                format!("Train to Gdynia Glowna "),
             ),
         ],
     );
@@ -62,57 +32,27 @@ async fn get_requests() -> (
     let try_ztm_messages = ztm::ztm::ZTM::new(
         None,
         vec![
-            (
-                "1482", // ID of bus stop
-                vec![158, 258],
-                "Bus to Parkour:\n",
-            ),
-            (
-                "1645", // ID of bus stop
-                vec![158],
-                "Bus home from Parkour:\n",
-            ),
-            (
-                "1767", // ID of bus stop
-                vec![227],
-                "Bus to Galeria Baltycka:\n",
-            ),
-            (
-                "1634", // ID of bus stop
-                vec![227],
-                "Bus home from Galeria Baltycka:\n",
-            ),
-            (
-                "1768", // ID of bus stop
-                vec![227],
-                "Bus to Jelitkowo:\n",
-            ),
-            (
-                "2088", // ID of bus stop
-                vec![2, 4, 8],
-                "Tram to Mickiewicza:\n",
-            ),
-            (
-                "2075", // ID of bus stop
-                vec![2, 4, 8],
-                "Tram home from Mickiewicza:\n",
-            ),
-            (
-                "1404", // ID of bus stop
-                vec![110],
-                "Bus to Gdansk Wrzeszcz (Through IKEA):\n",
-            ),
-            (
-                "1404", // ID of bus stop
-                vec![210],
-                "Bus to Gdansk Glowny (Through IKEA):\n",
-            ),
-            (
-                "1404", // ID of bus stop
-                vec![122],
-                "Bus to Sopot (Through IKEA):\n",
-            ),
-        ],
+        //            (
+        //                "1482", // ID of bus stop
+        //                vec![158, 258],
+        //                "Bus to Parkour:\n",
+        //            ),
+        //            (
+        //                "1404", // ID of bus stop
+        //                vec![110],
+        //                "Bus to Gdansk Wrzeszcz (Through IKEA):\n",
+        //            ),
+        //            (
+        //                "1404", // ID of bus stop
+        //                vec![210],
+        //                "Bus to Gdansk Glowny (Through IKEA):\n",
+        //            ),
+        //            (
+        //                "1404", // ID of bus stop
+        //                vec![122],
+        //                "Bus to Sopot (Through IKEA):\n",
+        //            ),
+                ],
     );
 
     (
