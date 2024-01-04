@@ -16,14 +16,14 @@ async fn get_requests() -> (
                     "Gdansk Port Lotniczy".to_string(), //TODO: Add support to Firoga
                     "Gdansk Wrzeszcz".to_string(),
                 ],
-                format!("Train to Wrzeszcz "),
+                format!("Gdansk Wrzeszcz "),
             ),
             (
                 vec![
                     "Gdansk Port Lotniczy".to_string(), //TODO: Add support to Firoga
                     "Gdynia Glowna".to_string(),
                 ],
-                format!("Train to Gdynia Glowna "),
+                format!("Gdynia Glowna "),
             ),
         ],
     );
