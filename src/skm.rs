@@ -44,7 +44,7 @@ pub mod skm {
             &pattern_slice[0..id_offset_end]
         }
 
-        fn get_message(&self, body: &str, station: &str) -> String {
+        fn get_message(&self, body: &str, station: &str, curr_time : chrono::NaiveTime) -> String {
             // We connstruct search pattern to get remaining time. for example:
             // Najbliższa kolejka za</p>
             //<h3 class="no-print">28 min</h3>
@@ -52,16 +52,35 @@ pub mod skm {
             let search_phrase = "Najbl".to_string();
             let return_string: String = match body.find(&search_phrase) {
                 Some(start_offset) => {
-                    let pattern_slice = &body[start_offset..start_offset + 400]; // 400 characters should be enough
-                                                                                 // find first two "dd min"
+                    let pattern_slice = &body[start_offset..]; 
+                                                              
+                    // Find a first time right after "timetable-shown"
                     let mut next_train_minutes: String = "".to_owned();
-                    Regex::new(r"[0-9]+\s[m][i][n]")
+
+                    // Match exacly phrase "timetable-shown" (three times)
+                    Regex::new(r"timetable-shown(.|\n){0,300}")
                         .unwrap()
-                        .find_iter(pattern_slice)
-                        .for_each(|x| {
-                            next_train_minutes += x.as_str();
-                            next_train_minutes += ", "
+                        .find_iter(pattern_slice).take(3)
+                        .for_each(|roi| {
+
+                            Regex::new(r"[0-9]+[:][0-9]+") // for example 14:04
+                                .unwrap()
+                                .find_iter(roi.as_str())
+                                .for_each(|x| {
+
+                                    // lets convert 14:04 into NaiveTime and subtract curr_time from it
+                                    let nt = chrono::NaiveTime::parse_from_str(x.as_str(),"%H:%M").expect("Unable to parse time into NaiveDate");
+
+
+                                    let remaining_time = nt.signed_duration_since(curr_time).num_minutes();
+
+                                    next_train_minutes += &format!("{remaining_time}");
+                                    next_train_minutes += " min, "
+                                });
                         });
+
+
+
 
                     "  (".to_string() + station + " --> ) departs in " + &next_train_minutes
                 }
@@ -117,7 +136,7 @@ pub mod skm {
             messages
                 .borrow_mut()
                 .push((msg_prefix.to_owned(), order_number << 1));
-            let mystring = self.get_message(&actual_response, &x[0]);
+            let mystring = self.get_message(&actual_response, &x[0],chrono::Local::now().time());
             messages
                 .borrow_mut()
                 .push((mystring, (order_number << 1) + 1));
@@ -195,7 +214,7 @@ pub mod skm {
         #[test]
         fn test_parsing_message() -> GenericResult<()> {
             // Let's read data to parse from stored file
-            let mut file = std::fs::File::open("data/test_data.txt")?;
+            let mut file = std::fs::File::open("data/test_data-3.txt")?;
 
             let mut s = String::new();
             file.read_to_string(&mut s)?;
@@ -205,14 +224,14 @@ pub mod skm {
                 None,
                 vec![(
                     vec![
-                        "Gdansk Wrzeszcz".to_string(),
                         "Gdansk Port Lotniczy".to_string(),
+                        "Gdansk Wrzeszcz".to_string(),
                     ],
                     format!("Train to work:"),
                 )],
             )
-            .get_message(&s, "Gdansk Wrzeszcz");
-            let expected_response = "  (Gdansk Wrzeszcz --> ) departs in 16 min, 26 min, 80 min, ";
+            .get_message(&s, "Gdansk Wrzeszcz", chrono::NaiveTime::from_hms(7,47,0));
+            let expected_response = "  (Gdansk Wrzeszcz --> ) departs in 16 min, 22 min, 37 min, ";
             assert_eq!(response, expected_response);
             Ok(())
         }
@@ -236,7 +255,7 @@ pub mod skm {
                     format!("Train to work "),
                 )],
             )
-            .get_message(&s, "Gdansk Wrzeszcz");
+            .get_message(&s, "Gdansk Wrzeszcz",chrono::NaiveTime::from_hms(13,48,0));
             let expected_response = "No connections today";
             assert_eq!(response, expected_response);
             Ok(())

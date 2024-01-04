@@ -1,5 +1,4 @@
 use macroquad::prelude::*;
-use std::cell::RefCell;
 use std::sync::mpsc;
 
 #[macroquad::main("Train-Helper")]
