@@ -79,7 +79,7 @@ pub mod skm {
                                 });
                         });
 
-                    "  (".to_string() + station + " --> ) departs in " + &next_train_minutes
+                    "(".to_string() + station + " --> ) departs in " + &next_train_minutes
                 }
                 None => "No connections today".to_owned(),
             };
