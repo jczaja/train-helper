@@ -130,13 +130,14 @@ pub mod skm {
                 .text();
 
             let actual_response = res.await.expect("Error: unwrapping SKM response");
-            messages
-                .borrow_mut()
-                .push((msg_prefix.to_owned(), order_number << 1));
+//            messages
+//                .borrow_mut()
+//                .push((msg_prefix.to_owned(), order_number << 1));
             let mystring = self.get_message(&actual_response, &x[0],chrono::Local::now().time());
             messages
                 .borrow_mut()
                 .push((msg_prefix.to_string() + &mystring, (order_number << 1) + 1));
+                //.push((mystring, (order_number << 1) + 1));
         }
 
         pub async fn submit(&self) -> Result<Rc<RefCell<Vec<(String, u32)>>>, String> {
