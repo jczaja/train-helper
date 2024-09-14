@@ -113,7 +113,7 @@ pub mod skm {
             // Send a request to SKM web page
             let request = "".to_string()
                 + &self.skm_url
-                + "/rozklad/?from="
+                + "rozklad/?from="
                 + from_id
                 + "&to="
                 + to_id
@@ -214,7 +214,7 @@ pub mod skm {
         #[test]
         fn test_parsing_message() -> GenericResult<()> {
             // Let's read data to parse from stored file
-            let mut file = std::fs::File::open("data/test_data-3.txt")?;
+            let mut file = std::fs::File::open("data/test_data_4.txt")?;
 
             let mut s = String::new();
             file.read_to_string(&mut s)?;
@@ -224,14 +224,14 @@ pub mod skm {
                 None,
                 vec![(
                     vec![
-                        "Gdansk Port Lotniczy".to_string(),
+                        "Gdansk Firoga".to_string(),
                         "Gdansk Wrzeszcz".to_string(),
                     ],
                     format!("Train to work:"),
                 )],
             )
-            .get_message(&s, "Gdansk Wrzeszcz", chrono::NaiveTime::from_hms(7,47,0));
-            let expected_response = "  (Gdansk Wrzeszcz --> ) departs in 16 min, 22 min, 37 min, ";
+            .get_message(&s, "Gdansk Firoga", chrono::NaiveTime::from_hms(17,28,0));
+            let expected_response = "  (Gdansk Firoga --> ) departs in 16 min, 46 min, 76 min, ";
             assert_eq!(response, expected_response);
             Ok(())
         }
